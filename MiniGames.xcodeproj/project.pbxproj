@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		1A1E83C41BDC42CD000866A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E83C31BDC42CD000866A2 /* AppDelegate.swift */; };
-		1A1E83C61BDC42CD000866A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E83C51BDC42CD000866A2 /* ViewController.swift */; };
 		1A1E83C91BDC42CD000866A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1E83C71BDC42CD000866A2 /* Main.storyboard */; };
 		1A1E83CB1BDC42CD000866A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1E83CA1BDC42CD000866A2 /* Assets.xcassets */; };
 		1A1E83CE1BDC42CD000866A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1E83CC1BDC42CD000866A2 /* LaunchScreen.storyboard */; };
+		1A1E83D81BDD0A93000866A2 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1E83D71BDD0A93000866A2 /* bubble.png */; };
+		1A1E83DA1BDD0DC8000866A2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E83D91BDD0DC8000866A2 /* HomeViewController.swift */; };
+		1A1E83DC1BDD2C0F000866A2 /* PegBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E83DB1BDD2C0F000866A2 /* PegBoardViewController.swift */; };
+		1A1E83DE1BDD2C25000866A2 /* ConnectFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E83DD1BDD2C25000866A2 /* ConnectFourViewController.swift */; };
+		1A1E83E01BDD2C38000866A2 /* EightPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E83DF1BDD2C38000866A2 /* EightPuzzleViewController.swift */; };
+		1A1E83E21BDD2C4E000866A2 /* TicTacToeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E83E11BDD2C4E000866A2 /* TicTacToeViewController.swift */; };
+		1A1E83E41BDDCB61000866A2 /* BubblesBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A1E83E31BDDCB61000866A2 /* BubblesBackground.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A1E83C01BDC42CD000866A2 /* MiniGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1E83C31BDC42CD000866A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A1E83C51BDC42CD000866A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A1E83C81BDC42CD000866A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A1E83CA1BDC42CD000866A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A1E83CD1BDC42CD000866A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A1E83CF1BDC42CD000866A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A1E83D71BDD0A93000866A2 /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
+		1A1E83D91BDD0DC8000866A2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1A1E83DB1BDD2C0F000866A2 /* PegBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PegBoardViewController.swift; sourceTree = "<group>"; };
+		1A1E83DD1BDD2C25000866A2 /* ConnectFourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectFourViewController.swift; sourceTree = "<group>"; };
+		1A1E83DF1BDD2C38000866A2 /* EightPuzzleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EightPuzzleViewController.swift; sourceTree = "<group>"; };
+		1A1E83E11BDD2C4E000866A2 /* TicTacToeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeViewController.swift; sourceTree = "<group>"; };
+		1A1E83E31BDDCB61000866A2 /* BubblesBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BubblesBackground.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +66,18 @@
 		1A1E83C21BDC42CD000866A2 /* MiniGames */ = {
 			isa = PBXGroup;
 			children = (
+				1A1E83E31BDDCB61000866A2 /* BubblesBackground.jpg */,
+				1A1E83D71BDD0A93000866A2 /* bubble.png */,
 				1A1E83C31BDC42CD000866A2 /* AppDelegate.swift */,
-				1A1E83C51BDC42CD000866A2 /* ViewController.swift */,
 				1A1E83C71BDC42CD000866A2 /* Main.storyboard */,
 				1A1E83CA1BDC42CD000866A2 /* Assets.xcassets */,
 				1A1E83CC1BDC42CD000866A2 /* LaunchScreen.storyboard */,
 				1A1E83CF1BDC42CD000866A2 /* Info.plist */,
+				1A1E83D91BDD0DC8000866A2 /* HomeViewController.swift */,
+				1A1E83DB1BDD2C0F000866A2 /* PegBoardViewController.swift */,
+				1A1E83DD1BDD2C25000866A2 /* ConnectFourViewController.swift */,
+				1A1E83DF1BDD2C38000866A2 /* EightPuzzleViewController.swift */,
+				1A1E83E11BDD2C4E000866A2 /* TicTacToeViewController.swift */,
 			);
 			path = MiniGames;
 			sourceTree = "<group>";
@@ -123,6 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A1E83CE1BDC42CD000866A2 /* LaunchScreen.storyboard in Resources */,
+				1A1E83E41BDDCB61000866A2 /* BubblesBackground.jpg in Resources */,
+				1A1E83D81BDD0A93000866A2 /* bubble.png in Resources */,
 				1A1E83CB1BDC42CD000866A2 /* Assets.xcassets in Resources */,
 				1A1E83C91BDC42CD000866A2 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A1E83C61BDC42CD000866A2 /* ViewController.swift in Sources */,
 				1A1E83C41BDC42CD000866A2 /* AppDelegate.swift in Sources */,
+				1A1E83DC1BDD2C0F000866A2 /* PegBoardViewController.swift in Sources */,
+				1A1E83E01BDD2C38000866A2 /* EightPuzzleViewController.swift in Sources */,
+				1A1E83E21BDD2C4E000866A2 /* TicTacToeViewController.swift in Sources */,
+				1A1E83DA1BDD0DC8000866A2 /* HomeViewController.swift in Sources */,
+				1A1E83DE1BDD2C25000866A2 /* ConnectFourViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
