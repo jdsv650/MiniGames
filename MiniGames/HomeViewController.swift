@@ -132,7 +132,7 @@ class HomeViewController: UIViewController {
         height = self.mainView.frame.height
         width = self.mainView.frame.width
         
-        let TicTacLabel = UILabel(frame: CGRectMake(25, 25, 95, 40))
+        let TicTacLabel = UILabel(frame: CGRectMake(30, 25, 95, 40))
         TicTacLabel.text = "Tic Tac Toe"
         TicTacLabel.textAlignment = NSTextAlignment.Center
         TicTacToe.layer.zPosition = 1
@@ -144,13 +144,13 @@ class HomeViewController: UIViewController {
         EightPuzzle.layer.zPosition = 1
         EightPuzzle.addSubview(EightLabel)
         
-        let Connect4Label = UILabel(frame: CGRectMake(40, 20, 95, 40))
+        let Connect4Label = UILabel(frame: CGRectMake(40, 30, 95, 40))
         Connect4Label.text = "Connect 4"
         Connect4Label.textAlignment = NSTextAlignment.Center
         ConnectFour.layer.zPosition = 1
         ConnectFour.addSubview(Connect4Label)
         
-        let PegLabel = UILabel(frame: CGRectMake(25, 35, 95, 40))
+        let PegLabel = UILabel(frame: CGRectMake(25, 40, 95, 40))
         PegLabel.text = "Peg Board"
         PegLabel.textAlignment = NSTextAlignment.Center
         PegBoard.layer.zPosition = 1
