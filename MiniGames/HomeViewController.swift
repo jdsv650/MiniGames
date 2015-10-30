@@ -115,7 +115,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor(patternImage: (UIImage (named: "BubblesBackground.jpg"))!)
+        self.view.backgroundColor = UIColor(patternImage: (UIImage (named: "BubblesBackground.png"))!)
 
         origTicTacToeWidth = self.TicTacToe.frame.size.width
         origTicTacToeHeight = self.TicTacToe.frame.size.height
@@ -228,12 +228,36 @@ class HomeViewController: UIViewController {
         
         let randX = CGFloat(random() % Int(width))
         let randY = CGFloat(random() % Int(height))
-        let randTime = Double((random() % 10) + 15)
+        let randTime = Double((random() % 10) + 4)
         
-        UIView.animateWithDuration(randTime, delay: 0, options: [UIViewAnimationOptions.AllowUserInteraction, UIViewAnimationOptions.BeginFromCurrentState], animations: {
+       // let newPegHeight = origPegHeight + CGFloat(random() % 30)
+       // let newPegWidth = origPegWidth + CGFloat(random() % 30)
+        
+        //self.PegBoard.transform = CGAffineTransformIdentity
+       // self.PegBoard.transform = CGAffineTransformMakeScale(1.0, 1.0)
+        //  self.PegBoard.transform = CGAffineTransformMakeScale(self.randomBetween(1.0, secondNum: 2.0), self.randomBetween(1.0, secondNum: 2.0))
+
+        
+        UIView.animateWithDuration(randTime, delay: 0, options: UIViewAnimationOptions.AllowUserInteraction, animations: {
             self.PegBoard.frame = CGRectMake(randX, randY, self.PegBoard.frame.size.width, self.PegBoard.frame.size.height)
-            }, completion: { (Bool) in self.animatePegBoard(randX, newOriginY: randY) }
+         //  self.PegBoard.transform = CGAffineTransformMakeTranslation(randX, randY)
+            
+        
+
+            //self.PegBoard.transform = CGAffineTransformIdentity
+            //self.PegBoard.transform = CGAffineTransformMakeScale(1.0, 1.0)
+            }, completion:
+                { (Bool) in
+                   // self.PegBoard.transform = CGAffineTransformMakeScale(1.0, 1.0)
+                   // self.PegBoard.transform = CGAffineTransformIdentity
+                    
+                    self.animatePegBoard(randX, newOriginY: randY)
+                }
         )
+    }
+    
+    func randomBetween(firstNum: CGFloat, secondNum: CGFloat) -> CGFloat{
+        return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
     }
     
     

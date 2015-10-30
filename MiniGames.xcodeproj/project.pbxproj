@@ -17,7 +17,7 @@
 		1A1E83DE1BDD2C25000866A2 /* ConnectFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E83DD1BDD2C25000866A2 /* ConnectFourViewController.swift */; };
 		1A1E83E01BDD2C38000866A2 /* EightPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E83DF1BDD2C38000866A2 /* EightPuzzleViewController.swift */; };
 		1A1E83E21BDD2C4E000866A2 /* TicTacToeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E83E11BDD2C4E000866A2 /* TicTacToeViewController.swift */; };
-		1A1E83E41BDDCB61000866A2 /* BubblesBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A1E83E31BDDCB61000866A2 /* BubblesBackground.jpg */; };
+		1A1E83E61BDDF61F000866A2 /* BubblesBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1E83E51BDDF61F000866A2 /* BubblesBackground.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		1A1E83DD1BDD2C25000866A2 /* ConnectFourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectFourViewController.swift; sourceTree = "<group>"; };
 		1A1E83DF1BDD2C38000866A2 /* EightPuzzleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EightPuzzleViewController.swift; sourceTree = "<group>"; };
 		1A1E83E11BDD2C4E000866A2 /* TicTacToeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeViewController.swift; sourceTree = "<group>"; };
-		1A1E83E31BDDCB61000866A2 /* BubblesBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BubblesBackground.jpg; sourceTree = "<group>"; };
+		1A1E83E51BDDF61F000866A2 /* BubblesBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BubblesBackground.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 		1A1E83C21BDC42CD000866A2 /* MiniGames */ = {
 			isa = PBXGroup;
 			children = (
-				1A1E83E31BDDCB61000866A2 /* BubblesBackground.jpg */,
+				1A1E83E51BDDF61F000866A2 /* BubblesBackground.png */,
 				1A1E83D71BDD0A93000866A2 /* bubble.png */,
 				1A1E83C31BDC42CD000866A2 /* AppDelegate.swift */,
 				1A1E83C71BDC42CD000866A2 /* Main.storyboard */,
@@ -141,8 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A1E83CE1BDC42CD000866A2 /* LaunchScreen.storyboard in Resources */,
-				1A1E83E41BDDCB61000866A2 /* BubblesBackground.jpg in Resources */,
 				1A1E83D81BDD0A93000866A2 /* bubble.png in Resources */,
+				1A1E83E61BDDF61F000866A2 /* BubblesBackground.png in Resources */,
 				1A1E83CB1BDC42CD000866A2 /* Assets.xcassets in Resources */,
 				1A1E83C91BDC42CD000866A2 /* Main.storyboard in Resources */,
 			);
