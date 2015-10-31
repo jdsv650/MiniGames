@@ -18,6 +18,7 @@
 		1A1E83E01BDD2C38000866A2 /* EightPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E83DF1BDD2C38000866A2 /* EightPuzzleViewController.swift */; };
 		1A1E83E21BDD2C4E000866A2 /* TicTacToeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E83E11BDD2C4E000866A2 /* TicTacToeViewController.swift */; };
 		1A1E83E61BDDF61F000866A2 /* BubblesBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1E83E51BDDF61F000866A2 /* BubblesBackground.png */; };
+		1A28A8AA1BE53E1200CB8C30 /* EightBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A28A8A91BE53E1200CB8C30 /* EightBoard.swift */; };
 		1A4C085A1BE4514000AACA3B /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A4C08571BE4514000AACA3B /* white.png */; };
 		1A4C085B1BE4514000AACA3B /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A4C08581BE4514000AACA3B /* black.png */; };
 		1A4C085C1BE4514000AACA3B /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A4C08591BE4514000AACA3B /* red.png */; };
@@ -39,6 +40,7 @@
 		1A1E83DF1BDD2C38000866A2 /* EightPuzzleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EightPuzzleViewController.swift; sourceTree = "<group>"; };
 		1A1E83E11BDD2C4E000866A2 /* TicTacToeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeViewController.swift; sourceTree = "<group>"; };
 		1A1E83E51BDDF61F000866A2 /* BubblesBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BubblesBackground.png; sourceTree = "<group>"; };
+		1A28A8A91BE53E1200CB8C30 /* EightBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EightBoard.swift; sourceTree = "<group>"; };
 		1A4C08571BE4514000AACA3B /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
 		1A4C08581BE4514000AACA3B /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
 		1A4C08591BE4514000AACA3B /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		1A1E83C21BDC42CD000866A2 /* MiniGames */ = {
 			isa = PBXGroup;
 			children = (
+				1A28A8A81BE53DF600CB8C30 /* EightPuzzle */,
 				1A4C085D1BE4532700AACA3B /* Connect4 */,
 				1A1E83E51BDDF61F000866A2 /* BubblesBackground.png */,
 				1A1E83D71BDD0A93000866A2 /* bubble.png */,
@@ -92,6 +95,14 @@
 				1A4C08561BE4511F00AACA3B /* Supporting Files */,
 			);
 			path = MiniGames;
+			sourceTree = "<group>";
+		};
+		1A28A8A81BE53DF600CB8C30 /* EightPuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				1A28A8A91BE53E1200CB8C30 /* EightBoard.swift */,
+			);
+			name = EightPuzzle;
 			sourceTree = "<group>";
 		};
 		1A4C08561BE4511F00AACA3B /* Supporting Files */ = {
@@ -191,6 +202,7 @@
 			files = (
 				1A1E83C41BDC42CD000866A2 /* AppDelegate.swift in Sources */,
 				1A1E83DC1BDD2C0F000866A2 /* PegBoardViewController.swift in Sources */,
+				1A28A8AA1BE53E1200CB8C30 /* EightBoard.swift in Sources */,
 				1A1E83E01BDD2C38000866A2 /* EightPuzzleViewController.swift in Sources */,
 				1A1E83E21BDD2C4E000866A2 /* TicTacToeViewController.swift in Sources */,
 				1A4C08601BE4534F00AACA3B /* Player.swift in Sources */,
