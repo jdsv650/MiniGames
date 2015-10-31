@@ -30,6 +30,7 @@ class HomeViewController: UIViewController {
     var origEightWidth: CGFloat!
     var origEightHeight: CGFloat!
     
+
     
     @IBAction func ticTacToePressed(sender: UIButton) {
         
@@ -241,9 +242,6 @@ class HomeViewController: UIViewController {
         UIView.animateWithDuration(randTime, delay: 0, options: UIViewAnimationOptions.AllowUserInteraction, animations: {
             self.PegBoard.frame = CGRectMake(randX, randY, self.PegBoard.frame.size.width, self.PegBoard.frame.size.height)
          //  self.PegBoard.transform = CGAffineTransformMakeTranslation(randX, randY)
-            
-        
-
             //self.PegBoard.transform = CGAffineTransformIdentity
             //self.PegBoard.transform = CGAffineTransformMakeScale(1.0, 1.0)
             }, completion:
