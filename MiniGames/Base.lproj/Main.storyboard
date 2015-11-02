@@ -51,35 +51,15 @@
                         <outlet property="PegBoard" destination="mqY-W4-uXN" id="zCu-UW-yMD"/>
                         <outlet property="TicTacToe" destination="W9e-r0-hsE" id="o5T-Bo-JUa"/>
                         <outlet property="mainView" destination="e9U-DY-2G6" id="TnA-H7-Eb6"/>
-                        <segue destination="uYL-L0-v3X" kind="push" identifier="TicTacToeSegue" id="FlG-Dp-vNq"/>
                         <segue destination="KqU-YA-AsR" kind="push" identifier="ConnectFourSegue" id="DfK-UL-EKD"/>
                         <segue destination="J4z-vx-tad" kind="push" identifier="EightPuzzleSegue" id="n0G-WF-X4d"/>
                         <segue destination="Jhp-Hf-904" kind="push" identifier="PegBoardSegue" id="3LJ-sU-46w"/>
+                        <segue destination="J4B-DI-uNY" kind="push" identifier="TicTacToeSegue" id="7DP-Ql-dMa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R2i-nm-9K4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="859" y="-209.99999999999997"/>
-        </scene>
-        <!--Tic Tac Toe-->
-        <scene sceneID="crt-p3-dgl">
-            <objects>
-                <viewController id="uYL-L0-v3X" customClass="TicTacToeViewController" customModule="MiniGames" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9g2-t8-ym1"/>
-                        <viewControllerLayoutGuide type="bottom" id="tn1-eE-DZE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hPr-Ru-vht">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Tic Tac Toe" id="BYA-9P-4Sn"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UfT-hm-yvY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1227" y="-775.99999999999989"/>
+            <point key="canvasLocation" x="895" y="-161"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SYx-WA-nEo">
@@ -1463,13 +1443,236 @@
             </objects>
             <point key="canvasLocation" x="1185" y="349"/>
         </scene>
+        <!--Tic Tac Toe-->
+        <scene sceneID="9il-yC-ifj">
+            <objects>
+                <viewController id="J4B-DI-uNY" customClass="TicTacToeViewController" customModule="MiniGames" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="auZ-6N-ER9"/>
+                        <viewControllerLayoutGuide type="bottom" id="K65-4v-xfI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ana-48-fcJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1k-MY-eZf">
+                                <rect key="frame" x="20" y="130" width="280" height="74"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="One Player" image="stickman.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Abb-TJ-rxh" kind="push" identifier="OnePSegue" id="yXD-Kx-Fxc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oso-J4-ulM">
+                                <rect key="frame" x="20" y="244" width="280" height="74"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Two Player " image="stickmen.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Abb-TJ-rxh" kind="push" identifier="TwoPSegue" id="yy3-a0-l36"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEe-vq-ebT">
+                                <rect key="frame" x="20" y="355" width="280" height="74"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Slingshot" image="stickmenWithSlingshots.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beanbag.png" translatesAutoresizingMaskIntoConstraints="NO" id="cl1-Cg-YWM">
+                                <rect key="frame" x="212" y="404" width="100" height="100"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tic Tac Toe" id="i6F-Ii-zY0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N50-Bp-xYp" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="-820"/>
+        </scene>
+        <!--Tic Tac Toe Game View Controller-->
+        <scene sceneID="gia-cE-yQt">
+            <objects>
+                <viewController id="Abb-TJ-rxh" customClass="TicTacToeGameViewController" customModule="MiniGames" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3wF-dx-nt5"/>
+                        <viewControllerLayoutGuide type="bottom" id="j7X-sl-kXy"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" id="cSO-Iq-855">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ova-Yj-sCI">
+                                <rect key="frame" x="20" y="95" width="85" height="85"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="poolWater.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="KGE-F1-GW5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNx-ZX-ERk">
+                                <rect key="frame" x="118" y="95" width="85" height="85"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="poolWater.png"/>
+                                <connections>
+                                    <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="D2x-KP-zHs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWg-BV-Cuj">
+                                <rect key="frame" x="215" y="95" width="85" height="85"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="poolWater.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="tMI-V8-8gf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ava-gb-PLg">
+                                <rect key="frame" x="20" y="188" width="85" height="85"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="poolWater.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="rV7-0R-UJB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mp-4C-Zn0">
+                                <rect key="frame" x="118" y="188" width="85" height="85"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="poolWater.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="fOt-Dd-tlJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yW-uz-MJJ">
+                                <rect key="frame" x="215" y="188" width="85" height="85"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="poolWater.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="gNy-L1-hff"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="31" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGf-0Y-dqZ">
+                                <rect key="frame" x="20" y="281" width="85" height="85"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="poolWater.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="ta7-0T-AhX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="32" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rg1-vk-m36">
+                                <rect key="frame" x="118" y="281" width="85" height="85"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="poolWater.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="ySa-Rm-lg1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="33" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUn-4U-fil">
+                                <rect key="frame" x="215" y="281" width="85" height="85"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="poolWater.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="y9V-qf-4ED"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="qtE-Vw-e3V">
+                                <rect key="frame" x="70" y="389" width="180" height="29"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="" image="star.png" width="60"/>
+                                    <segment title="" image="stars2.png" width="60"/>
+                                    <segment title="" image="stars3.png" width="60"/>
+                                </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="levelSelected:" destination="Abb-TJ-rxh" eventType="valueChanged" id="t4Q-LX-mhw"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Medium" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgB-sp-mv8">
+                                <rect key="frame" x="97" y="425" width="127" height="21"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KwJ-W4-UTw"/>
+                    <connections>
+                        <outlet property="button1_1_Outlet" destination="ova-Yj-sCI" id="DFK-mc-Kjz"/>
+                        <outlet property="button1_2_Outlet" destination="gNx-ZX-ERk" id="SAb-4z-Ogk"/>
+                        <outlet property="button1_3_Outlet" destination="ZWg-BV-Cuj" id="sT0-d8-Hcg"/>
+                        <outlet property="button2_1_Outlet" destination="ava-gb-PLg" id="wKI-zN-LRL"/>
+                        <outlet property="button2_2_Outlet" destination="4mp-4C-Zn0" id="FRh-08-ngN"/>
+                        <outlet property="button2_3_Outlet" destination="1yW-uz-MJJ" id="bmR-jX-EhN"/>
+                        <outlet property="button3_1_Outlet" destination="VGf-0Y-dqZ" id="EPx-Yv-Kox"/>
+                        <outlet property="button3_2_Outlet" destination="Rg1-vk-m36" id="2VR-qc-CGQ"/>
+                        <outlet property="button3_3_Outlet" destination="CUn-4U-fil" id="0V2-PQ-8oA"/>
+                        <outlet property="level_Label" destination="vgB-sp-mv8" id="6yV-eC-Jac"/>
+                        <outlet property="level_Outlet" destination="qtE-Vw-e3V" id="b6s-ZN-ZeV"/>
+                        <outlet property="view" destination="cSO-Iq-855" id="yyv-ip-dy9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FCk-GD-v1I" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1448" y="-835"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="beanbag.png" width="16" height="16"/>
         <image name="blackCircle.png" width="200" height="201"/>
         <image name="bubble.png" width="425" height="425"/>
+        <image name="poolWater.png" width="16" height="16"/>
         <image name="red.png" width="40" height="40"/>
+        <image name="star.png" width="16" height="16"/>
+        <image name="stars2.png" width="16" height="16"/>
+        <image name="stars3.png" width="16" height="16"/>
+        <image name="stickman.png" width="16" height="16"/>
+        <image name="stickmen.png" width="16" height="16"/>
+        <image name="stickmenWithSlingshots.png" width="16" height="16"/>
         <image name="tee.png" width="50" height="50"/>
         <image name="white.png" width="40" height="40"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yy3-a0-l36"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
