@@ -1485,6 +1485,9 @@
                                 <state key="normal" title="Slingshot" image="stickmenWithSlingshots.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="1Rg-Dv-cTe" kind="push" identifier="SlingshotSegue" id="bbh-av-x89"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beanbag.png" translatesAutoresizingMaskIntoConstraints="NO" id="cl1-Cg-YWM">
                                 <rect key="frame" x="212" y="404" width="100" height="100"/>
@@ -1653,21 +1656,180 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FCk-GD-v1I" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1448" y="-835"/>
+            <point key="canvasLocation" x="1563" y="-685"/>
+        </scene>
+        <!--Tic Slingshot View Controller-->
+        <scene sceneID="Re6-TQ-45E">
+            <objects>
+                <viewController id="1Rg-Dv-cTe" customClass="TicSlingshotViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jQG-T5-sFi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Owi-Vc-sDq"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="YSK-f3-wSa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tXo-cO-0os">
+                                <rect key="frame" x="0.0" y="64" width="320" height="429"/>
+                                <subviews>
+                                    <button opaque="NO" tag="110" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svZ-OF-pMH">
+                                        <rect key="frame" x="20" y="20" width="85" height="85"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="poolWaterWithXO.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getUserMove:" destination="1Rg-Dv-cTe" eventType="touchUpInside" id="XMc-Mc-W85"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="120" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2k-D5-TlD">
+                                        <rect key="frame" x="118" y="20" width="85" height="85"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="poolWaterWithXO.png"/>
+                                        <connections>
+                                            <action selector="getUserMove:" destination="1Rg-Dv-cTe" eventType="touchUpInside" id="2L3-gh-Zi9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="130" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYs-aR-QW1">
+                                        <rect key="frame" x="215" y="20" width="85" height="85"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="poolWaterWithXO.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getUserMove:" destination="1Rg-Dv-cTe" eventType="touchUpInside" id="JXS-OE-sel"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="210" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypY-nT-BeJ">
+                                        <rect key="frame" x="20" y="118" width="85" height="85"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="poolWaterWithXO.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getUserMove:" destination="1Rg-Dv-cTe" eventType="touchUpInside" id="rnD-qo-nDo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="220" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBq-L3-LxV">
+                                        <rect key="frame" x="118" y="118" width="85" height="85"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="poolWaterWithXO.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getUserMove:" destination="1Rg-Dv-cTe" eventType="touchUpInside" id="huO-e3-Ncf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="230" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcF-tw-oUb">
+                                        <rect key="frame" x="215" y="118" width="85" height="85"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="poolWaterWithXO.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getUserMove:" destination="1Rg-Dv-cTe" eventType="touchUpInside" id="Heu-4r-0gG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="310" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pi-mR-1Hy">
+                                        <rect key="frame" x="20" y="215" width="85" height="85"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="poolWaterWithXO.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getUserMove:" destination="1Rg-Dv-cTe" eventType="touchUpInside" id="OTT-GV-132"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="320" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZJ-2Z-WgO">
+                                        <rect key="frame" x="118" y="215" width="85" height="85"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="poolWaterWithXO.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getUserMove:" destination="1Rg-Dv-cTe" eventType="touchUpInside" id="RSt-C2-mww"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="330" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ozq-YH-Jo4">
+                                        <rect key="frame" x="215" y="215" width="85" height="85"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="poolWaterWithXO.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getUserMove:" destination="1Rg-Dv-cTe" eventType="touchUpInside" id="jB8-ix-GY0"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="slingshot1.png" translatesAutoresizingMaskIntoConstraints="NO" id="6PF-7l-DnZ">
+                                        <rect key="frame" x="130" y="314" width="54" height="80"/>
+                                        <animations/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="beanbag.png" translatesAutoresizingMaskIntoConstraints="NO" id="E8o-TZ-1Mt">
+                                        <rect key="frame" x="20" y="349" width="44" height="45"/>
+                                        <animations/>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BKP-a2-9yY"/>
+                    <connections>
+                        <outlet property="beanBagOutlet" destination="E8o-TZ-1Mt" id="nRn-co-o9c"/>
+                        <outlet property="button1_1_Out" destination="svZ-OF-pMH" id="XEp-Q9-b2c"/>
+                        <outlet property="button1_2_Out" destination="D2k-D5-TlD" id="GLt-dc-a5o"/>
+                        <outlet property="button1_3_Out" destination="BYs-aR-QW1" id="2L5-9T-2Hc"/>
+                        <outlet property="button2_1_Out" destination="ypY-nT-BeJ" id="edv-JE-1md"/>
+                        <outlet property="button2_2_Out" destination="BBq-L3-LxV" id="spI-O8-jah"/>
+                        <outlet property="button2_3_Out" destination="pcF-tw-oUb" id="KiR-gG-pfO"/>
+                        <outlet property="button3_1_Out" destination="7pi-mR-1Hy" id="LgR-IT-EJu"/>
+                        <outlet property="button3_2_Out" destination="LZJ-2Z-WgO" id="hV3-UN-jlh"/>
+                        <outlet property="button3_3_Out" destination="Ozq-YH-Jo4" id="bOJ-Ht-LSh"/>
+                        <outlet property="slingshotOutlet" destination="6PF-7l-DnZ" id="AVM-yQ-jc4"/>
+                        <outlet property="view" destination="YSK-f3-wSa" id="WEi-O1-01r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8xj-aw-w5d" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1941" y="-933"/>
         </scene>
     </scenes>
     <resources>
-        <image name="beanbag.png" width="16" height="16"/>
+        <image name="beanbag.png" width="45" height="44"/>
         <image name="blackCircle.png" width="200" height="201"/>
         <image name="bubble.png" width="425" height="425"/>
-        <image name="poolWater.png" width="16" height="16"/>
+        <image name="poolWater.png" width="85" height="85"/>
+        <image name="poolWaterWithXO.png" width="85" height="85"/>
         <image name="red.png" width="40" height="40"/>
-        <image name="star.png" width="16" height="16"/>
-        <image name="stars2.png" width="16" height="16"/>
-        <image name="stars3.png" width="16" height="16"/>
-        <image name="stickman.png" width="16" height="16"/>
-        <image name="stickmen.png" width="16" height="16"/>
-        <image name="stickmenWithSlingshots.png" width="16" height="16"/>
+        <image name="slingshot1.png" width="54" height="80"/>
+        <image name="star.png" width="30" height="30"/>
+        <image name="stars2.png" width="30" height="30"/>
+        <image name="stars3.png" width="30" height="30"/>
+        <image name="stickman.png" width="40" height="40"/>
+        <image name="stickmen.png" width="80" height="80"/>
+        <image name="stickmenWithSlingshots.png" width="80" height="80"/>
         <image name="tee.png" width="50" height="50"/>
         <image name="white.png" width="40" height="40"/>
     </resources>

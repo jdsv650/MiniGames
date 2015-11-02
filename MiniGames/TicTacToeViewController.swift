@@ -18,16 +18,23 @@ class TicTacToeViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        let nextVC = segue.destinationViewController as! TicTacToeGameViewController
-        
-        if segue.identifier == "OnePSegue"
+        if segue.identifier == "SlingshotSegue"
         {
-            nextVC.isVersusComp = true
+            //let nextVC = segue.destinationViewController as! TicSlingshotViewController
         }
-        
-        if segue.identifier == "TwoPSegue"
+        else
         {
-            nextVC.isVersusComp = false
+            let nextVC = segue.destinationViewController as! TicTacToeGameViewController
+        
+            if segue.identifier == "OnePSegue"
+            {
+                nextVC.isVersusComp = true
+            }
+        
+            if segue.identifier == "TwoPSegue"
+            {
+                nextVC.isVersusComp = false
+            }
         }
     }
 

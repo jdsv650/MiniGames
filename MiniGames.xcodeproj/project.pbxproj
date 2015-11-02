@@ -35,6 +35,18 @@
 		1A28A90D1BE6E74300CB8C30 /* stickman.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A28A9021BE6E74300CB8C30 /* stickman.png */; };
 		1A28A90E1BE6E74300CB8C30 /* stickmen.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A28A9031BE6E74300CB8C30 /* stickmen.png */; };
 		1A28A90F1BE6E74300CB8C30 /* stickmenWithSlingshots.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A28A9041BE6E74300CB8C30 /* stickmenWithSlingshots.png */; };
+		1A28A9131BE7435600CB8C30 /* TicSlingshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A28A9121BE7435600CB8C30 /* TicSlingshotViewController.m */; };
+		1A28A9151BE7443800CB8C30 /* poolWaterWithXO.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A28A9141BE7443800CB8C30 /* poolWaterWithXO.png */; };
+		1A28A9211BE744A900CB8C30 /* slingshot1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A28A9171BE744A900CB8C30 /* slingshot1.png */; };
+		1A28A9221BE744A900CB8C30 /* slingshot2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A28A9181BE744A900CB8C30 /* slingshot2.png */; };
+		1A28A9231BE744A900CB8C30 /* slingshot3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A28A9191BE744A900CB8C30 /* slingshot3.png */; };
+		1A28A9241BE744A900CB8C30 /* slingshot4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A28A91A1BE744A900CB8C30 /* slingshot4.png */; };
+		1A28A9251BE744A900CB8C30 /* slingshot5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A28A91B1BE744A900CB8C30 /* slingshot5.png */; };
+		1A28A9261BE744A900CB8C30 /* slingshot6.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A28A91C1BE744A900CB8C30 /* slingshot6.png */; };
+		1A28A9271BE744A900CB8C30 /* slingshot7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A28A91D1BE744A900CB8C30 /* slingshot7.png */; };
+		1A28A9281BE744A900CB8C30 /* slingshot8.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A28A91E1BE744A900CB8C30 /* slingshot8.png */; };
+		1A28A9291BE744A900CB8C30 /* slingshot9.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A28A91F1BE744A900CB8C30 /* slingshot9.png */; };
+		1A28A92A1BE744A900CB8C30 /* slingshot10.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A28A9201BE744A900CB8C30 /* slingshot10.png */; };
 		1A4C085A1BE4514000AACA3B /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A4C08571BE4514000AACA3B /* white.png */; };
 		1A4C085B1BE4514000AACA3B /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A4C08581BE4514000AACA3B /* black.png */; };
 		1A4C085C1BE4514000AACA3B /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A4C08591BE4514000AACA3B /* red.png */; };
@@ -73,6 +85,20 @@
 		1A28A9021BE6E74300CB8C30 /* stickman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stickman.png; sourceTree = "<group>"; };
 		1A28A9031BE6E74300CB8C30 /* stickmen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stickmen.png; sourceTree = "<group>"; };
 		1A28A9041BE6E74300CB8C30 /* stickmenWithSlingshots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stickmenWithSlingshots.png; sourceTree = "<group>"; };
+		1A28A9101BE7435500CB8C30 /* MiniGames-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MiniGames-Bridging-Header.h"; sourceTree = "<group>"; };
+		1A28A9111BE7435600CB8C30 /* TicSlingshotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicSlingshotViewController.h; sourceTree = "<group>"; };
+		1A28A9121BE7435600CB8C30 /* TicSlingshotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicSlingshotViewController.m; sourceTree = "<group>"; };
+		1A28A9141BE7443800CB8C30 /* poolWaterWithXO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poolWaterWithXO.png; sourceTree = "<group>"; };
+		1A28A9171BE744A900CB8C30 /* slingshot1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slingshot1.png; sourceTree = "<group>"; };
+		1A28A9181BE744A900CB8C30 /* slingshot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slingshot2.png; sourceTree = "<group>"; };
+		1A28A9191BE744A900CB8C30 /* slingshot3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slingshot3.png; sourceTree = "<group>"; };
+		1A28A91A1BE744A900CB8C30 /* slingshot4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slingshot4.png; sourceTree = "<group>"; };
+		1A28A91B1BE744A900CB8C30 /* slingshot5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slingshot5.png; sourceTree = "<group>"; };
+		1A28A91C1BE744A900CB8C30 /* slingshot6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slingshot6.png; sourceTree = "<group>"; };
+		1A28A91D1BE744A900CB8C30 /* slingshot7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slingshot7.png; sourceTree = "<group>"; };
+		1A28A91E1BE744A900CB8C30 /* slingshot8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slingshot8.png; sourceTree = "<group>"; };
+		1A28A91F1BE744A900CB8C30 /* slingshot9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slingshot9.png; sourceTree = "<group>"; };
+		1A28A9201BE744A900CB8C30 /* slingshot10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slingshot10.png; sourceTree = "<group>"; };
 		1A4C08571BE4514000AACA3B /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
 		1A4C08581BE4514000AACA3B /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
 		1A4C08591BE4514000AACA3B /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
@@ -127,7 +153,10 @@
 				1A1E83DF1BDD2C38000866A2 /* EightPuzzleViewController.swift */,
 				1A1E83E11BDD2C4E000866A2 /* TicTacToeViewController.swift */,
 				1A28A8F71BE6E65100CB8C30 /* TicTacToeGameViewController.swift */,
+				1A28A9111BE7435600CB8C30 /* TicSlingshotViewController.h */,
+				1A28A9121BE7435600CB8C30 /* TicSlingshotViewController.m */,
 				1A4C08561BE4511F00AACA3B /* Supporting Files */,
+				1A28A9101BE7435500CB8C30 /* MiniGames-Bridging-Header.h */,
 			);
 			path = MiniGames;
 			sourceTree = "<group>";
@@ -154,6 +183,8 @@
 		1A28A8F91BE6E72300CB8C30 /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				1A28A9161BE7449300CB8C30 /* Slingshots */,
+				1A28A9141BE7443800CB8C30 /* poolWaterWithXO.png */,
 				1A28A8FA1BE6E74300CB8C30 /* poolO.png */,
 				1A28A8FB1BE6E74300CB8C30 /* poolX.png */,
 				1A28A8FC1BE6E74300CB8C30 /* beachsand4.png */,
@@ -167,6 +198,23 @@
 				1A28A9041BE6E74300CB8C30 /* stickmenWithSlingshots.png */,
 			);
 			name = TicTacToe;
+			sourceTree = "<group>";
+		};
+		1A28A9161BE7449300CB8C30 /* Slingshots */ = {
+			isa = PBXGroup;
+			children = (
+				1A28A9171BE744A900CB8C30 /* slingshot1.png */,
+				1A28A9181BE744A900CB8C30 /* slingshot2.png */,
+				1A28A9191BE744A900CB8C30 /* slingshot3.png */,
+				1A28A91A1BE744A900CB8C30 /* slingshot4.png */,
+				1A28A91B1BE744A900CB8C30 /* slingshot5.png */,
+				1A28A91C1BE744A900CB8C30 /* slingshot6.png */,
+				1A28A91D1BE744A900CB8C30 /* slingshot7.png */,
+				1A28A91E1BE744A900CB8C30 /* slingshot8.png */,
+				1A28A91F1BE744A900CB8C30 /* slingshot9.png */,
+				1A28A9201BE744A900CB8C30 /* slingshot10.png */,
+			);
+			name = Slingshots;
 			sourceTree = "<group>";
 		};
 		1A4C08561BE4511F00AACA3B /* Supporting Files */ = {
@@ -251,15 +299,23 @@
 				1A28A8B11BE5442C00CB8C30 /* blackCircle.png in Resources */,
 				1A28A9061BE6E74300CB8C30 /* poolX.png in Resources */,
 				1A28A9081BE6E74300CB8C30 /* stars3.png in Resources */,
+				1A28A9211BE744A900CB8C30 /* slingshot1.png in Resources */,
 				1A4C085B1BE4514000AACA3B /* black.png in Resources */,
+				1A28A9221BE744A900CB8C30 /* slingshot2.png in Resources */,
+				1A28A9241BE744A900CB8C30 /* slingshot4.png in Resources */,
 				1A28A90E1BE6E74300CB8C30 /* stickmen.png in Resources */,
 				1A28A90F1BE6E74300CB8C30 /* stickmenWithSlingshots.png in Resources */,
 				1A1E83D81BDD0A93000866A2 /* bubble.png in Resources */,
+				1A28A9231BE744A900CB8C30 /* slingshot3.png in Resources */,
+				1A28A9261BE744A900CB8C30 /* slingshot6.png in Resources */,
 				1A28A9051BE6E74300CB8C30 /* poolO.png in Resources */,
+				1A28A9281BE744A900CB8C30 /* slingshot8.png in Resources */,
 				1A1E83E61BDDF61F000866A2 /* BubblesBackground.png in Resources */,
 				1A28A90D1BE6E74300CB8C30 /* stickman.png in Resources */,
+				1A28A9271BE744A900CB8C30 /* slingshot7.png in Resources */,
 				1A28A90B1BE6E74300CB8C30 /* poolWater.png in Resources */,
 				1A28A90A1BE6E74300CB8C30 /* star.png in Resources */,
+				1A28A9291BE744A900CB8C30 /* slingshot9.png in Resources */,
 				1A1E83CB1BDC42CD000866A2 /* Assets.xcassets in Resources */,
 				1A28A90C1BE6E74300CB8C30 /* beanbag.png in Resources */,
 				1A4C085C1BE4514000AACA3B /* red.png in Resources */,
@@ -267,7 +323,10 @@
 				1A28A9091BE6E74300CB8C30 /* stars2.png in Resources */,
 				1A28A8B31BE5442C00CB8C30 /* tee.png in Resources */,
 				1A1E83C91BDC42CD000866A2 /* Main.storyboard in Resources */,
+				1A28A9251BE744A900CB8C30 /* slingshot5.png in Resources */,
+				1A28A92A1BE744A900CB8C30 /* slingshot10.png in Resources */,
 				1A4C085A1BE4514000AACA3B /* white.png in Resources */,
+				1A28A9151BE7443800CB8C30 /* poolWaterWithXO.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +347,7 @@
 				1A1E83DA1BDD0DC8000866A2 /* HomeViewController.swift in Sources */,
 				1A4C08611BE4534F00AACA3B /* Board.swift in Sources */,
 				1A1E83DE1BDD2C25000866A2 /* ConnectFourViewController.swift in Sources */,
+				1A28A9131BE7435600CB8C30 /* TicSlingshotViewController.m in Sources */,
 				1A28A8B01BE5442C00CB8C30 /* PegBoard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,11 +459,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MiniGames/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jdsv650.MiniGames;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MiniGames/MiniGames-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -411,11 +474,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MiniGames/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jdsv650.MiniGames;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MiniGames/MiniGames-Bridging-Header.h";
 			};
 			name = Release;
 		};
