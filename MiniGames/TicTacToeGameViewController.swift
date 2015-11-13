@@ -25,6 +25,8 @@ class TicTacToeGameViewController: UIViewController {
     @IBOutlet weak var button3_3_Outlet : UIButton!
     @IBOutlet weak var level_Outlet: UISegmentedControl!
     @IBOutlet weak var level_Label: UILabel!
+    @IBOutlet weak var boardView: UIView!
+    
     
     var isPlayerX :Bool = true
     var buttonBackStr: String?
@@ -36,6 +38,10 @@ class TicTacToeGameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        boardView.backgroundColor = UIColor(patternImage: UIImage(named: "beachsand4.png")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "BubblesBackground.png")!)
+        
         buttonBackStr = "poolWater.png"
         buttonXStr = "poolX.png"
         buttonOStr = "poolO.png"

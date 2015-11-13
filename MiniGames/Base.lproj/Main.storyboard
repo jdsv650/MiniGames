@@ -1455,47 +1455,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1k-MY-eZf">
-                                <rect key="frame" x="20" y="130" width="280" height="74"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1k-MY-eZf">
+                                <rect key="frame" x="20" y="156" width="280" height="72"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="YkN-tm-Nal"/>
+                                    <constraint firstAttribute="width" constant="280" id="u0t-NP-RSH"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="One Player" image="stickman.png">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="Abb-TJ-rxh" kind="push" identifier="OnePSegue" id="yXD-Kx-Fxc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oso-J4-ulM">
-                                <rect key="frame" x="20" y="244" width="280" height="74"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oso-J4-ulM">
+                                <rect key="frame" x="20" y="248" width="280" height="72"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="CHg-VM-EEW"/>
+                                    <constraint firstAttribute="height" constant="72" id="d7T-dj-cuc"/>
+                                </constraints>
                                 <state key="normal" title="Two Player " image="stickmen.png">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="Abb-TJ-rxh" kind="push" identifier="TwoPSegue" id="yy3-a0-l36"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEe-vq-ebT">
-                                <rect key="frame" x="20" y="355" width="280" height="74"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEe-vq-ebT">
+                                <rect key="frame" x="20" y="340" width="280" height="72"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="vUv-Kk-1Mw"/>
+                                    <constraint firstAttribute="width" constant="280" id="wTK-Bs-8o4"/>
+                                </constraints>
                                 <state key="normal" title="Slingshot" image="stickmenWithSlingshots.png">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="1Rg-Dv-cTe" kind="push" identifier="SlingshotSegue" id="bbh-av-x89"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beanbag.png" translatesAutoresizingMaskIntoConstraints="NO" id="cl1-Cg-YWM">
-                                <rect key="frame" x="212" y="404" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beanbag.png" translatesAutoresizingMaskIntoConstraints="NO" id="cl1-Cg-YWM">
+                                <rect key="frame" x="222" y="392" width="78" height="78"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="022-Zx-45U"/>
+                                    <constraint firstAttribute="height" constant="78" id="8x1-Qf-vVQ"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Oso-J4-ulM" firstAttribute="top" secondItem="u1k-MY-eZf" secondAttribute="bottom" constant="20" id="75Z-Di-2z5"/>
+                            <constraint firstItem="cl1-Cg-YWM" firstAttribute="top" secondItem="wEe-vq-ebT" secondAttribute="bottom" constant="-20" id="HH7-1P-G4F"/>
+                            <constraint firstItem="Oso-J4-ulM" firstAttribute="centerY" secondItem="ana-48-fcJ" secondAttribute="centerY" id="LoO-q6-sjN"/>
+                            <constraint firstItem="u1k-MY-eZf" firstAttribute="centerX" secondItem="ana-48-fcJ" secondAttribute="centerX" id="MSp-ms-lLA"/>
+                            <constraint firstItem="cl1-Cg-YWM" firstAttribute="trailing" secondItem="wEe-vq-ebT" secondAttribute="trailing" id="VHQ-zz-BeA"/>
+                            <constraint firstItem="wEe-vq-ebT" firstAttribute="centerX" secondItem="ana-48-fcJ" secondAttribute="centerX" id="etv-Fk-crt"/>
+                            <constraint firstItem="wEe-vq-ebT" firstAttribute="top" secondItem="Oso-J4-ulM" secondAttribute="bottom" constant="20" id="gRb-Ej-k63"/>
+                            <constraint firstItem="Oso-J4-ulM" firstAttribute="centerX" secondItem="ana-48-fcJ" secondAttribute="centerX" id="i3j-HG-hkU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tic Tac Toe" id="i6F-Ii-zY0"/>
                 </viewController>
@@ -1515,131 +1541,193 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ova-Yj-sCI">
-                                <rect key="frame" x="20" y="95" width="85" height="85"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jaf-Mu-bIi">
+                                <rect key="frame" x="4" y="84" width="312" height="480"/>
+                                <subviews>
+                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ova-Yj-sCI">
+                                        <rect key="frame" x="20" y="20" width="85" height="85"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="poolWater.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="KGE-F1-GW5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNx-ZX-ERk">
+                                        <rect key="frame" x="118" y="20" width="85" height="85"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="poolWater.png"/>
+                                        <connections>
+                                            <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="D2x-KP-zHs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWg-BV-Cuj">
+                                        <rect key="frame" x="215" y="20" width="85" height="85"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="poolWater.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="tMI-V8-8gf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yW-uz-MJJ">
+                                        <rect key="frame" x="215" y="113" width="85" height="85"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="poolWater.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="gNy-L1-hff"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mp-4C-Zn0">
+                                        <rect key="frame" x="118" y="113" width="85" height="85"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="poolWater.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="fOt-Dd-tlJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ava-gb-PLg">
+                                        <rect key="frame" x="20" y="113" width="85" height="85"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="poolWater.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="rV7-0R-UJB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGf-0Y-dqZ">
+                                        <rect key="frame" x="20" y="206" width="85" height="85"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="poolWater.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="ta7-0T-AhX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rg1-vk-m36">
+                                        <rect key="frame" x="118" y="206" width="85" height="85"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="poolWater.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="ySa-Rm-lg1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUn-4U-fil">
+                                        <rect key="frame" x="215" y="206" width="85" height="85"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="poolWater.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="y9V-qf-4ED"/>
+                                        </connections>
+                                    </button>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="qtE-Vw-e3V">
+                                        <rect key="frame" x="70" y="314" width="180" height="29"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <segments>
+                                            <segment title="" image="star.png" width="60"/>
+                                            <segment title="" image="stars2.png" width="60"/>
+                                            <segment title="" image="stars3.png" width="60"/>
+                                        </segments>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="levelSelected:" destination="Abb-TJ-rxh" eventType="valueChanged" id="t4Q-LX-mhw"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Medium" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgB-sp-mv8">
+                                        <rect key="frame" x="97" y="350" width="127" height="21"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Y8V-wM-VVp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="poolWater.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="KGE-F1-GW5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNx-ZX-ERk">
-                                <rect key="frame" x="118" y="95" width="85" height="85"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="poolWater.png"/>
-                                <connections>
-                                    <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="D2x-KP-zHs"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWg-BV-Cuj">
-                                <rect key="frame" x="215" y="95" width="85" height="85"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="poolWater.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="tMI-V8-8gf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ava-gb-PLg">
-                                <rect key="frame" x="20" y="188" width="85" height="85"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="poolWater.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="rV7-0R-UJB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mp-4C-Zn0">
-                                <rect key="frame" x="118" y="188" width="85" height="85"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="poolWater.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="fOt-Dd-tlJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yW-uz-MJJ">
-                                <rect key="frame" x="215" y="188" width="85" height="85"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="poolWater.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="gNy-L1-hff"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="31" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGf-0Y-dqZ">
-                                <rect key="frame" x="20" y="281" width="85" height="85"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="poolWater.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="ta7-0T-AhX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="32" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rg1-vk-m36">
-                                <rect key="frame" x="118" y="281" width="85" height="85"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="poolWater.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="ySa-Rm-lg1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="33" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUn-4U-fil">
-                                <rect key="frame" x="215" y="281" width="85" height="85"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" backgroundImage="poolWater.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="y9V-qf-4ED"/>
-                                </connections>
-                            </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="qtE-Vw-e3V">
-                                <rect key="frame" x="70" y="389" width="180" height="29"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <segments>
-                                    <segment title="" image="star.png" width="60"/>
-                                    <segment title="" image="stars2.png" width="60"/>
-                                    <segment title="" image="stars3.png" width="60"/>
-                                </segments>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="levelSelected:" destination="Abb-TJ-rxh" eventType="valueChanged" id="t4Q-LX-mhw"/>
-                                </connections>
-                            </segmentedControl>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Medium" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgB-sp-mv8">
-                                <rect key="frame" x="97" y="425" width="127" height="21"/>
-                                <animations/>
-                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="VGf-0Y-dqZ" firstAttribute="top" secondItem="Rg1-vk-m36" secondAttribute="top" id="12m-C3-ob2"/>
+                                    <constraint firstItem="gNx-ZX-ERk" firstAttribute="baseline" secondItem="ZWg-BV-Cuj" secondAttribute="baseline" id="2db-GJ-aeh"/>
+                                    <constraint firstItem="ZWg-BV-Cuj" firstAttribute="top" secondItem="gNx-ZX-ERk" secondAttribute="top" id="5k3-rM-Jyv"/>
+                                    <constraint firstItem="ava-gb-PLg" firstAttribute="top" secondItem="4mp-4C-Zn0" secondAttribute="top" id="8cL-ai-1Wv"/>
+                                    <constraint firstItem="ova-Yj-sCI" firstAttribute="firstBaseline" secondItem="ZWg-BV-Cuj" secondAttribute="firstBaseline" id="AsA-Gr-2vf"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZWg-BV-Cuj" secondAttribute="trailing" constant="12" id="B52-2o-5yv"/>
+                                    <constraint firstItem="ZWg-BV-Cuj" firstAttribute="baseline" secondItem="ova-Yj-sCI" secondAttribute="baseline" id="DSC-7z-wAL"/>
+                                    <constraint firstItem="Rg1-vk-m36" firstAttribute="trailing" secondItem="4mp-4C-Zn0" secondAttribute="trailing" id="ET6-Y5-IpI"/>
+                                    <constraint firstItem="ova-Yj-sCI" firstAttribute="firstBaseline" secondItem="gNx-ZX-ERk" secondAttribute="firstBaseline" id="FSY-SU-0St"/>
+                                    <constraint firstItem="4mp-4C-Zn0" firstAttribute="baseline" secondItem="1yW-uz-MJJ" secondAttribute="baseline" id="GFg-GM-Io0"/>
+                                    <constraint firstItem="1yW-uz-MJJ" firstAttribute="top" secondItem="4mp-4C-Zn0" secondAttribute="top" id="HA3-9U-TM6"/>
+                                    <constraint firstAttribute="height" constant="480" id="HL1-Tk-ebp"/>
+                                    <constraint firstItem="gNx-ZX-ERk" firstAttribute="firstBaseline" secondItem="ZWg-BV-Cuj" secondAttribute="firstBaseline" id="IyZ-kl-DQn"/>
+                                    <constraint firstItem="ava-gb-PLg" firstAttribute="leading" secondItem="ova-Yj-sCI" secondAttribute="leading" id="JPD-Ep-P52"/>
+                                    <constraint firstItem="CUn-4U-fil" firstAttribute="firstBaseline" secondItem="Rg1-vk-m36" secondAttribute="firstBaseline" id="JQP-EN-Ymh"/>
+                                    <constraint firstItem="gNx-ZX-ERk" firstAttribute="baseline" secondItem="ova-Yj-sCI" secondAttribute="baseline" id="N1H-Rz-QjZ"/>
+                                    <constraint firstItem="vgB-sp-mv8" firstAttribute="leading" secondItem="jaf-Mu-bIi" secondAttribute="leading" constant="97" id="NpD-pA-UGS"/>
+                                    <constraint firstItem="ava-gb-PLg" firstAttribute="firstBaseline" secondItem="1yW-uz-MJJ" secondAttribute="firstBaseline" id="QMH-xl-Ue9"/>
+                                    <constraint firstItem="qtE-Vw-e3V" firstAttribute="leading" secondItem="jaf-Mu-bIi" secondAttribute="leading" constant="70" id="RgL-Fv-FAD"/>
+                                    <constraint firstItem="gNx-ZX-ERk" firstAttribute="leading" secondItem="ova-Yj-sCI" secondAttribute="trailing" constant="13" id="S5q-ws-6j9"/>
+                                    <constraint firstItem="Rg1-vk-m36" firstAttribute="baseline" secondItem="VGf-0Y-dqZ" secondAttribute="baseline" id="UgF-Lj-h5l"/>
+                                    <constraint firstItem="ova-Yj-sCI" firstAttribute="top" secondItem="jaf-Mu-bIi" secondAttribute="top" constant="20" id="Uvr-VR-Gqa"/>
+                                    <constraint firstItem="ZWg-BV-Cuj" firstAttribute="leading" secondItem="gNx-ZX-ERk" secondAttribute="trailing" constant="12" id="Uzl-Ax-PL0"/>
+                                    <constraint firstItem="4mp-4C-Zn0" firstAttribute="trailing" secondItem="gNx-ZX-ERk" secondAttribute="trailing" id="W0G-EH-H4j"/>
+                                    <constraint firstItem="qtE-Vw-e3V" firstAttribute="centerX" secondItem="vgB-sp-mv8" secondAttribute="centerX" id="eFw-U2-cus"/>
+                                    <constraint firstAttribute="width" constant="312" id="eLR-6I-TxV"/>
+                                    <constraint firstItem="ava-gb-PLg" firstAttribute="baseline" secondItem="1yW-uz-MJJ" secondAttribute="baseline" id="f8v-dP-hZM"/>
+                                    <constraint firstItem="VGf-0Y-dqZ" firstAttribute="top" secondItem="ava-gb-PLg" secondAttribute="bottom" constant="8" symbolic="YES" id="fNQ-gg-R0Y"/>
+                                    <constraint firstItem="ava-gb-PLg" firstAttribute="firstBaseline" secondItem="4mp-4C-Zn0" secondAttribute="firstBaseline" id="fRf-uT-c8f"/>
+                                    <constraint firstItem="1yW-uz-MJJ" firstAttribute="leading" secondItem="ZWg-BV-Cuj" secondAttribute="leading" id="k6R-BF-Npt"/>
+                                    <constraint firstItem="VGf-0Y-dqZ" firstAttribute="baseline" secondItem="CUn-4U-fil" secondAttribute="baseline" id="lWd-Om-cZs"/>
+                                    <constraint firstItem="VGf-0Y-dqZ" firstAttribute="firstBaseline" secondItem="CUn-4U-fil" secondAttribute="firstBaseline" id="mUy-Jh-rdd"/>
+                                    <constraint firstItem="Rg1-vk-m36" firstAttribute="baseline" secondItem="CUn-4U-fil" secondAttribute="baseline" id="orW-TG-e5s"/>
+                                    <constraint firstItem="1yW-uz-MJJ" firstAttribute="firstBaseline" secondItem="4mp-4C-Zn0" secondAttribute="firstBaseline" id="pr5-Hd-x9B"/>
+                                    <constraint firstItem="ava-gb-PLg" firstAttribute="top" secondItem="ova-Yj-sCI" secondAttribute="bottom" constant="8" symbolic="YES" id="qku-cb-aYX"/>
+                                    <constraint firstItem="qtE-Vw-e3V" firstAttribute="top" secondItem="VGf-0Y-dqZ" secondAttribute="bottom" constant="23" id="sC3-o1-Ob4"/>
+                                    <constraint firstItem="qtE-Vw-e3V" firstAttribute="centerX" secondItem="Rg1-vk-m36" secondAttribute="centerX" id="sgS-OV-m2Y"/>
+                                    <constraint firstItem="Rg1-vk-m36" firstAttribute="firstBaseline" secondItem="VGf-0Y-dqZ" secondAttribute="firstBaseline" id="tHV-Wo-RPn"/>
+                                    <constraint firstItem="VGf-0Y-dqZ" firstAttribute="leading" secondItem="ava-gb-PLg" secondAttribute="leading" id="ttg-5w-D8U"/>
+                                    <constraint firstItem="vgB-sp-mv8" firstAttribute="top" secondItem="qtE-Vw-e3V" secondAttribute="bottom" constant="8" symbolic="YES" id="ucI-nN-663"/>
+                                    <constraint firstItem="ava-gb-PLg" firstAttribute="baseline" secondItem="4mp-4C-Zn0" secondAttribute="baseline" id="ul1-dO-oRC"/>
+                                    <constraint firstItem="ova-Yj-sCI" firstAttribute="top" secondItem="gNx-ZX-ERk" secondAttribute="top" id="wpP-xb-9Mn"/>
+                                    <constraint firstItem="1yW-uz-MJJ" firstAttribute="trailing" secondItem="ZWg-BV-Cuj" secondAttribute="trailing" id="y1c-h2-2NC"/>
+                                    <constraint firstItem="1yW-uz-MJJ" firstAttribute="leading" secondItem="CUn-4U-fil" secondAttribute="leading" id="ySN-VT-KhR"/>
+                                    <constraint firstItem="CUn-4U-fil" firstAttribute="top" secondItem="Rg1-vk-m36" secondAttribute="top" id="zt8-Pk-YNe"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jaf-Mu-bIi" firstAttribute="centerX" secondItem="cSO-Iq-855" secondAttribute="centerX" id="8sH-bI-IdB"/>
+                            <constraint firstItem="jaf-Mu-bIi" firstAttribute="top" secondItem="3wF-dx-nt5" secondAttribute="bottom" constant="20" id="gS3-e8-yhN"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KwJ-W4-UTw"/>
                     <connections>
+                        <outlet property="boardView" destination="jaf-Mu-bIi" id="gdZ-Ej-O9B"/>
                         <outlet property="button1_1_Outlet" destination="ova-Yj-sCI" id="DFK-mc-Kjz"/>
                         <outlet property="button1_2_Outlet" destination="gNx-ZX-ERk" id="SAb-4z-Ogk"/>
                         <outlet property="button1_3_Outlet" destination="ZWg-BV-Cuj" id="sT0-d8-Hcg"/>
@@ -1656,7 +1744,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FCk-GD-v1I" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1563" y="-685"/>
+            <point key="canvasLocation" x="1548" y="-859"/>
         </scene>
         <!--Tic Slingshot View Controller-->
         <scene sceneID="Re6-TQ-45E">
@@ -1670,8 +1758,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tXo-cO-0os">
-                                <rect key="frame" x="0.0" y="64" width="320" height="429"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tXo-cO-0os">
+                                <rect key="frame" x="4" y="84" width="312" height="480"/>
                                 <subviews>
                                     <button opaque="NO" tag="110" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svZ-OF-pMH">
                                         <rect key="frame" x="20" y="20" width="85" height="85"/>
@@ -1690,7 +1778,9 @@
                                         <animations/>
                                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" backgroundImage="poolWaterWithXO.png"/>
+                                        <state key="normal" backgroundImage="poolWaterWithXO.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="getUserMove:" destination="1Rg-Dv-cTe" eventType="touchUpInside" id="2L3-gh-Zi9"/>
                                         </connections>
@@ -1789,15 +1879,24 @@
                                     </imageView>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="480" id="2dP-Db-iji"/>
+                                    <constraint firstAttribute="width" constant="312" id="AvW-9P-pVH"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tXo-cO-0os" firstAttribute="centerX" secondItem="YSK-f3-wSa" secondAttribute="centerX" id="I3L-Nt-cUC"/>
+                            <constraint firstItem="tXo-cO-0os" firstAttribute="top" secondItem="jQG-T5-sFi" secondAttribute="bottom" constant="20" id="aTu-sY-UPg"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BKP-a2-9yY"/>
                     <connections>
                         <outlet property="beanBagOutlet" destination="E8o-TZ-1Mt" id="nRn-co-o9c"/>
+                        <outlet property="boardView" destination="tXo-cO-0os" id="4LE-E9-go5"/>
                         <outlet property="button1_1_Out" destination="svZ-OF-pMH" id="XEp-Q9-b2c"/>
                         <outlet property="button1_2_Out" destination="D2k-D5-TlD" id="GLt-dc-a5o"/>
                         <outlet property="button1_3_Out" destination="BYs-aR-QW1" id="2L5-9T-2Hc"/>

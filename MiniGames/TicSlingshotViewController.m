@@ -20,6 +20,8 @@ int row,col;
     __weak IBOutlet UIButton *button3_3_Out;
     __weak IBOutlet UIImageView *beanBagOutlet;
     __weak IBOutlet UIImageView *slingshotOutlet;
+    __weak IBOutlet UIView *boardView;
+    
     int beginY, endY;
     int beginX, endX;
     UITouch *beginTouch;
@@ -38,8 +40,8 @@ int row,col;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    //self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"beachsand4.png"]];
+    boardView.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"beachsand4.png"]];
+    self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"BubblesBackground.png"]];
     
     buttonBackStr = @"poolWaterWithXO.png";
     buttonXStr = @"poolX.png";
