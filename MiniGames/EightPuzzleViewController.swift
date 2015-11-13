@@ -27,6 +27,7 @@ class EightPuzzleViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "BubblesBackground.png")!)
         drawBoard()
     }
     
@@ -89,7 +90,8 @@ class EightPuzzleViewController: UIViewController {
         }
         else
         {
-            theButton.backgroundColor = UIColor(red: 0.40, green: 0.80, blue: 1.0, alpha: 1.0)
+            theButton.backgroundColor = UIColor(red: 0.98, green: 0.50, blue: 0.01, alpha: 1.0)
+                // blue UIColor(red: 0.40, green: 0.80, blue: 1.0, alpha: 1.0)
         }
     }
     
