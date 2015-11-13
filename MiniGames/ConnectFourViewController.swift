@@ -72,6 +72,10 @@ class ConnectFourViewController: UIViewController
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "BubblesBackground.png")!)
     }
     
+    override func viewDidAppear(animated: Bool) {
+        resetGame()
+    }
+    
     
     @IBAction func buttonPressed(sender: UIButton) {
         // board tags
