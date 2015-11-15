@@ -52,6 +52,7 @@
 		1A4C085C1BE4514000AACA3B /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A4C08591BE4514000AACA3B /* red.png */; };
 		1A4C08601BE4534F00AACA3B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4C085E1BE4534F00AACA3B /* Player.swift */; };
 		1A4C08611BE4534F00AACA3B /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4C085F1BE4534F00AACA3B /* Board.swift */; };
+		1A88B5DE1BF8177D003884B2 /* load_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A88B5DD1BF8177D003884B2 /* load_background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +105,7 @@
 		1A4C08591BE4514000AACA3B /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
 		1A4C085E1BE4534F00AACA3B /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		1A4C085F1BE4534F00AACA3B /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		1A88B5DD1BF8177D003884B2 /* load_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = load_background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 			children = (
 				1A28A9161BE7449300CB8C30 /* Slingshots */,
 				1A28A9141BE7443800CB8C30 /* poolWaterWithXO.png */,
+				1A88B5DD1BF8177D003884B2 /* load_background.png */,
 				1A28A8FA1BE6E74300CB8C30 /* poolO.png */,
 				1A28A8FB1BE6E74300CB8C30 /* poolX.png */,
 				1A28A8FC1BE6E74300CB8C30 /* beachsand4.png */,
@@ -303,6 +306,7 @@
 				1A4C085B1BE4514000AACA3B /* black.png in Resources */,
 				1A28A9221BE744A900CB8C30 /* slingshot2.png in Resources */,
 				1A28A9241BE744A900CB8C30 /* slingshot4.png in Resources */,
+				1A88B5DE1BF8177D003884B2 /* load_background.png in Resources */,
 				1A28A90E1BE6E74300CB8C30 /* stickmen.png in Resources */,
 				1A28A90F1BE6E74300CB8C30 /* stickmenWithSlingshots.png in Resources */,
 				1A1E83D81BDD0A93000866A2 /* bubble.png in Resources */,
