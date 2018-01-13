@@ -17,7 +17,7 @@ class TicTacToeViewController: UIViewController {
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "BubblesBackground.png")!)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "SlingshotSegue"
         {
@@ -25,7 +25,7 @@ class TicTacToeViewController: UIViewController {
         }
         else
         {
-            let nextVC = segue.destinationViewController as! TicTacToeGameViewController
+            let nextVC = segue.destination as! TicTacToeGameViewController
         
             if segue.identifier == "OnePSegue"
             {

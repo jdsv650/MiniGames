@@ -8,14 +8,14 @@
 
 import Foundation
 
-public class PegBoard
+open class PegBoard
 {
 
     enum Hole
     {
-        case Open
-        case Filled
-        case Off
+        case open
+        case filled
+        case off
     
     }
     
@@ -25,11 +25,11 @@ public class PegBoard
     
     var board :[[Hole]] =
     
-    [[Hole.Off,     Hole.Off,   Hole.Off,   Hole.Off,   Hole.Open, Hole.Off,    Hole.Off,    Hole.Off,    Hole.Off],
-     [Hole.Off,     Hole.Off,   Hole.Off,   Hole.Filled, Hole.Off,   Hole.Filled, Hole.Off,    Hole.Off,    Hole.Off],
-     [Hole.Off,     Hole.Off,   Hole.Filled, Hole.Off,  Hole.Filled, Hole.Off,    Hole.Filled, Hole.Off,    Hole.Off],
-     [Hole.Off,     Hole.Filled, Hole.Off,  Hole.Filled, Hole.Off,   Hole.Filled, Hole.Off,    Hole.Filled, Hole.Off],
-     [Hole.Filled,  Hole.Off,   Hole.Filled, Hole.Off,  Hole.Filled, Hole.Off,    Hole.Filled, Hole.Off,    Hole.Filled]]
+    [[Hole.off,     Hole.off,   Hole.off,   Hole.off,   Hole.open, Hole.off,    Hole.off,    Hole.off,    Hole.off],
+     [Hole.off,     Hole.off,   Hole.off,   Hole.filled, Hole.off,   Hole.filled, Hole.off,    Hole.off,    Hole.off],
+     [Hole.off,     Hole.off,   Hole.filled, Hole.off,  Hole.filled, Hole.off,    Hole.filled, Hole.off,    Hole.off],
+     [Hole.off,     Hole.filled, Hole.off,  Hole.filled, Hole.off,   Hole.filled, Hole.off,    Hole.filled, Hole.off],
+     [Hole.filled,  Hole.off,   Hole.filled, Hole.off,  Hole.filled, Hole.off,    Hole.filled, Hole.off,    Hole.filled]]
 
     
     init()
@@ -44,7 +44,7 @@ public class PegBoard
         selectOpenHole()
     }
     
-    func getHoleStatus(indexFromTagNum: Int) -> Hole
+    func getHoleStatus(_ indexFromTagNum: Int) -> Hole
     {
        //  04,
        //13, 15,
@@ -71,14 +71,14 @@ public class PegBoard
         case 48: return board[4][8]
         default:
             print("Unknown tag")
-            return Hole.Off
+            return Hole.off
         }
         
     }
     
     
     
-    func checkForValidDiagonalMove(startTagNum: Int, finishTagnumber: Int) -> Bool
+    func checkForValidDiagonalMove(_ startTagNum: Int, finishTagnumber: Int) -> Bool
     {
         let start = getIndexFromTagNumber(startTagNum)
         let startRow = start.row
@@ -90,7 +90,7 @@ public class PegBoard
         
         if (startRow - 2 == finishRow && startCol - 2 == finishCol)
         {
-            if board[startRow-1][startCol-1] != Hole.Filled
+            if board[startRow-1][startCol-1] != Hole.filled
             {
                return false
             }
@@ -98,7 +98,7 @@ public class PegBoard
         }
         if (startRow - 2 == finishRow && startCol + 2 == finishCol)
         {
-            if board[startRow-1][startCol+1] != Hole.Filled
+            if board[startRow-1][startCol+1] != Hole.filled
             {
                 return false
             }
@@ -106,7 +106,7 @@ public class PegBoard
         }
         if (startRow + 2 == finishRow && startCol - 2 == finishCol)
         {
-            if board[startRow+1][startCol-1] != Hole.Filled
+            if board[startRow+1][startCol-1] != Hole.filled
             {
                 return false
             }
@@ -114,7 +114,7 @@ public class PegBoard
         }
         if (startRow + 2 == finishRow && startCol + 2 == finishCol)
         {
-            if board[startRow+1][startCol+1] != Hole.Filled
+            if board[startRow+1][startCol+1] != Hole.filled
             {
                 return false
             }
@@ -124,17 +124,17 @@ public class PegBoard
         return false
     }
     
-    func removePeg(tagNum: Int) -> Bool
+    func removePeg(_ tagNum: Int) -> Bool
     {
         let start = getIndexFromTagNumber(tagNum)
         let startRow = start.row
         let startCol = start.col
         
-        board[startRow][startCol] = Hole.Open
+        board[startRow][startCol] = Hole.open
         return true
     }
     
-    func removeJumpedPeg(startTagNum: Int, finishTagnumber: Int) -> Bool
+    func removeJumpedPeg(_ startTagNum: Int, finishTagnumber: Int) -> Bool
     {
         let start = getIndexFromTagNumber(startTagNum)
         let startRow = start.row
@@ -146,25 +146,25 @@ public class PegBoard
         
         if finishRow < startRow && finishCol < startCol
         {
-            board[finishRow+1][finishCol+1] = Hole.Open
+            board[finishRow+1][finishCol+1] = Hole.open
             return true
         }
         
         if finishRow < startRow && finishCol > startCol
         {
-            board[finishRow+1][finishCol-1] = Hole.Open
+            board[finishRow+1][finishCol-1] = Hole.open
             return true
         }
         
         if finishRow > startRow && finishCol < startCol
         {
-            board[finishRow-1][finishCol+1] = Hole.Open
+            board[finishRow-1][finishCol+1] = Hole.open
             return true
         }
         
         if finishRow > startRow && finishCol > startCol
         {
-            board[finishRow-1][finishCol-1] = Hole.Open
+            board[finishRow-1][finishCol-1] = Hole.open
             return true
         }
         
@@ -172,7 +172,7 @@ public class PegBoard
     }
 
     
-    func getIndexFromTagNumber(tagNumber: Int) -> (row: Int, col: Int)
+    func getIndexFromTagNumber(_ tagNumber: Int) -> (row: Int, col: Int)
     {
         var row = 0
         var col = 0
@@ -201,7 +201,7 @@ public class PegBoard
         return (row,col)
     }
     
-    func updateHoleStatus(indexFromTagNum: Int, status: Hole) -> Bool
+    func updateHoleStatus(_ indexFromTagNum: Int, status: Hole) -> Bool
     {
         //  04,
         //13, 15,
@@ -236,13 +236,13 @@ public class PegBoard
     
     func fillBoard()
     {
-        for var i=0; i<rows; i++
+        for i in 0 ..< rows
         {
-            for var j=0; j<cols; j++
+            for j in 0 ..< cols
             {
-                if board[i][j] != Hole.Off
+                if board[i][j] != Hole.off
                 {
-                    board[i][j] = Hole.Filled
+                    board[i][j] = Hole.filled
                 }
                 
             }
@@ -255,13 +255,13 @@ public class PegBoard
         var randomRow = Int(arc4random_uniform(5))
         var randomCol = Int(arc4random_uniform(9))
         
-        while (board[randomRow][randomCol] != Hole.Filled)
+        while (board[randomRow][randomCol] != Hole.filled)
         {
             randomRow = Int(arc4random_uniform(5))
             randomCol = Int(arc4random_uniform(9))
         }
         
-        board[randomRow][randomCol]  = Hole.Open
+        board[randomRow][randomCol]  = Hole.open
     }
     
     

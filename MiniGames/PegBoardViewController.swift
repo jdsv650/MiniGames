@@ -17,24 +17,24 @@ class PegBoardViewController: UIViewController {
     var selectedPegTag = 0
     
     
-    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        return  UIInterfaceOrientationMask.LandscapeLeft
+    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+        return  UIInterfaceOrientationMask.landscapeLeft
 
     }
     
-    override func shouldAutorotate() -> Bool {
+    override var shouldAutorotate : Bool {
         return true
     }
     
-    override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
-        return UIInterfaceOrientation.LandscapeLeft
+    override var preferredInterfaceOrientationForPresentation : UIInterfaceOrientation {
+        return UIInterfaceOrientation.landscapeLeft
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let value = UIInterfaceOrientation.LandscapeLeft.rawValue
-        UIDevice.currentDevice().setValue(value, forKey: "orientation")
+        let value = UIInterfaceOrientation.landscapeLeft.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
         
         drawBoard()
     }
@@ -42,22 +42,22 @@ class PegBoardViewController: UIViewController {
     
     func drawBoard()
     {
-        for var i=0; i<Holes.count; i++
+        for i in 0 ..< Holes.count
         {
-            Holes[i].setTitle("", forState: UIControlState.Normal)
+            Holes[i].setTitle("", for: UIControlState())
             let currentHoleStatus = pegBoard.getHoleStatus(Holes[i].tag)
-            if currentHoleStatus == PegBoard.Hole.Open
+            if currentHoleStatus == PegBoard.Hole.open
             {
-                Holes[i].setBackgroundImage(UIImage(named: "blackCircle.png"), forState: UIControlState.Normal)
-            } else if currentHoleStatus == PegBoard.Hole.Filled
+                Holes[i].setBackgroundImage(UIImage(named: "blackCircle.png"), for: UIControlState())
+            } else if currentHoleStatus == PegBoard.Hole.filled
             {
-                Holes[i].setBackgroundImage(UIImage(named: "tee.png"), forState: UIControlState.Normal)
+                Holes[i].setBackgroundImage(UIImage(named: "tee.png"), for: UIControlState())
             }
         }
     }
     
     
-    @IBAction func resetPressed(sender: UIButton) {
+    @IBAction func resetPressed(_ sender: UIButton) {
         
         isPegSelected = false
         pegBoard.resetBoard()
@@ -65,29 +65,29 @@ class PegBoardViewController: UIViewController {
     }
     
     
-    @IBAction func pegPressed(sender: UIButton) {
+    @IBAction func pegPressed(_ sender: UIButton) {
         
         let status = pegBoard.getHoleStatus(sender.tag)
         
         // first if we tap same peg deselct it -- don't move this
         if isPegSelected == true && selectedPegTag == sender.tag
         {
-            sender.setTitle("", forState: UIControlState.Normal)
+            sender.setTitle("", for: UIControlState())
             isPegSelected = false
             return
         }
         
         // select a peg not open hole
-        if isPegSelected == false && status != PegBoard.Hole.Open
+        if isPegSelected == false && status != PegBoard.Hole.open
         {
-            sender.setTitle("X", forState: UIControlState.Normal)
+            sender.setTitle("X", for: UIControlState())
             
             isPegSelected = true
             selectedPegTag = sender.tag
         }
         
         // try to move to filled hole
-        if isPegSelected == true && status == PegBoard.Hole.Filled
+        if isPegSelected == true && status == PegBoard.Hole.filled
         {
             print("Slot not empty")
             isPegSelected = false
@@ -95,13 +95,13 @@ class PegBoardViewController: UIViewController {
         }
         
         // try to move to filled hole
-        if isPegSelected == true && status == PegBoard.Hole.Open
+        if isPegSelected == true && status == PegBoard.Hole.open
         {
             print("Open check for valid move")
             if pegBoard.checkForValidDiagonalMove(selectedPegTag, finishTagnumber: sender.tag)
             {
                 pegBoard.removePeg(selectedPegTag)
-                pegBoard.updateHoleStatus(sender.tag, status: PegBoard.Hole.Filled)
+                pegBoard.updateHoleStatus(sender.tag, status: PegBoard.Hole.filled)
                 pegBoard.removeJumpedPeg(selectedPegTag, finishTagnumber: sender.tag)
                 isPegSelected = false
                 drawBoard()

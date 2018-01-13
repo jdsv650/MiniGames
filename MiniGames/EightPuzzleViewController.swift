@@ -36,57 +36,57 @@ class EightPuzzleViewController: UIViewController {
     func drawBoard()
     {
         if let topL = theBoard.board["TopLeft"] {
-            topLeft.setTitle("\(topL)", forState: UIControlState.Normal)
+            topLeft.setTitle("\(topL)", for: UIControlState())
             colorTile(topLeft)
         }
         
         if let topM = theBoard.board["TopMiddle"] {
-            topMiddle.setTitle("\(topM)", forState: UIControlState.Normal)
+            topMiddle.setTitle("\(topM)", for: UIControlState())
             colorTile(topMiddle)
         }
         
         if let topR = theBoard.board["TopRight"] {
-            topRight.setTitle("\(topR)", forState: UIControlState.Normal)
+            topRight.setTitle("\(topR)", for: UIControlState())
             colorTile(topRight)
         }
         
         if let centerL = theBoard.board["CenterLeft"] {
-            centerLeft.setTitle("\(centerL)", forState: UIControlState.Normal)
+            centerLeft.setTitle("\(centerL)", for: UIControlState())
             colorTile(centerLeft)
         }
         
         if let centerM = theBoard.board["CenterMiddle"] {
-            centerMiddle.setTitle("\(centerM)", forState: UIControlState.Normal)
+            centerMiddle.setTitle("\(centerM)", for: UIControlState())
             colorTile(centerMiddle)
         }
         
         if let centerR = theBoard.board["CenterRight"] {
-            centerRight.setTitle("\(centerR)", forState: UIControlState.Normal)
+            centerRight.setTitle("\(centerR)", for: UIControlState())
             colorTile(centerRight)
         }
         
         if let bottomL = theBoard.board["BottomLeft"] {
-            bottomLeft.setTitle("\(bottomL)", forState: UIControlState.Normal)
+            bottomLeft.setTitle("\(bottomL)", for: UIControlState())
             colorTile(bottomLeft)
         }
         
         if let bottomM = theBoard.board["BottomMiddle"] {
-            bottomMiddle.setTitle("\(bottomM)", forState: UIControlState.Normal)
+            bottomMiddle.setTitle("\(bottomM)", for: UIControlState())
             colorTile(bottomMiddle)
         }
         
         if let bottomR = theBoard.board["BottomRight"] {
-            bottomRight.setTitle("\(bottomR)", forState: UIControlState.Normal)
+            bottomRight.setTitle("\(bottomR)", for: UIControlState())
             colorTile(bottomRight)
         }
     }
     
     
-    func colorTile(theButton: UIButton!)
+    func colorTile(_ theButton: UIButton!)
     {
-        if theButton.titleForState(UIControlState.Normal) == ""
+        if theButton.title(for: UIControlState()) == ""
         {
-            theButton.backgroundColor = UIColor.whiteColor()
+            theButton.backgroundColor = UIColor.white
         }
         else
         {
@@ -96,7 +96,7 @@ class EightPuzzleViewController: UIViewController {
     }
     
     
-    @IBAction func topLeftPressed(sender: UIButton)
+    @IBAction func topLeftPressed(_ sender: UIButton)
     {
         if theBoard.board["TopMiddle"] == ""
         {
@@ -115,7 +115,7 @@ class EightPuzzleViewController: UIViewController {
     }
     
     
-    @IBAction func topMiddlePressed(sender: UIButton) {
+    @IBAction func topMiddlePressed(_ sender: UIButton) {
         
         if theBoard.board["TopLeft"] == ""
         {
@@ -140,7 +140,7 @@ class EightPuzzleViewController: UIViewController {
     }
     
     
-    @IBAction func topRightPressed(sender: UIButton) {
+    @IBAction func topRightPressed(_ sender: UIButton) {
         
         if theBoard.board["TopMiddle"] == ""
         {
@@ -159,7 +159,7 @@ class EightPuzzleViewController: UIViewController {
     }
     
     
-    @IBAction func centerLeftPressed(sender: UIButton) {
+    @IBAction func centerLeftPressed(_ sender: UIButton) {
         
         if theBoard.board["TopLeft"] == ""
         {
@@ -184,7 +184,7 @@ class EightPuzzleViewController: UIViewController {
         
     }
     
-    @IBAction func centerMiddlePressed(sender: UIButton) {
+    @IBAction func centerMiddlePressed(_ sender: UIButton) {
         
         if theBoard.board["TopMiddle"] == ""
         {
@@ -215,7 +215,7 @@ class EightPuzzleViewController: UIViewController {
     }
     
     
-    @IBAction func centerRightPressed(sender: UIButton) {
+    @IBAction func centerRightPressed(_ sender: UIButton) {
         
         if theBoard.board["TopRight"] == ""
         {
@@ -240,7 +240,7 @@ class EightPuzzleViewController: UIViewController {
         
     }
     
-    @IBAction func bottomLeftPressed(sender: UIButton) {
+    @IBAction func bottomLeftPressed(_ sender: UIButton) {
         
         if theBoard.board["BottomMiddle"] == ""
         {
@@ -258,7 +258,7 @@ class EightPuzzleViewController: UIViewController {
         
     }
     
-    @IBAction func bottomMiddlePressed(sender: UIButton) {
+    @IBAction func bottomMiddlePressed(_ sender: UIButton) {
         
         if theBoard.board["BottomLeft"] == ""
         {
@@ -283,7 +283,7 @@ class EightPuzzleViewController: UIViewController {
     }
     
     
-    @IBAction func bottomRightPressed(sender: UIButton) {
+    @IBAction func bottomRightPressed(_ sender: UIButton) {
         
         if theBoard.board["BottomMiddle"] == ""
         {
@@ -303,14 +303,14 @@ class EightPuzzleViewController: UIViewController {
     
     
     
-    @IBAction func shufflePressed(sender: UIButton) {
+    @IBAction func shufflePressed(_ sender: UIButton) {
         
         var numbers = [Int]()
         
         // get 9 unique random numbers in range
         while numbers.count < 9
         {
-            let randomTileNumber = random() % 9
+            let randomTileNumber = Int(arc4random_uniform(0)) % 9
             var isFound = false
             
             for num in numbers
