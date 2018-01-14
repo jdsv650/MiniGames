@@ -195,9 +195,9 @@ class HomeViewController: UIViewController {
         }
 ***/
         
-        let randX = CGFloat(Int(arc4random_uniform(0)) % Int(width))
-        let randY = CGFloat(Int(arc4random_uniform(0)) % Int(height))
-        let randTime = Double((Int(arc4random_uniform(0)) % 20) + 2)
+        let randX = CGFloat(Int(arc4random_uniform(UInt32(width))))
+        let randY = CGFloat(Int(arc4random_uniform(UInt32(height))))
+        let randTime = Double((Int(arc4random_uniform(20))) + 2)
         
         UIView.animate(withDuration: randTime, delay: 0, options: [UIViewAnimationOptions.allowUserInteraction, UIViewAnimationOptions.beginFromCurrentState ], animations: {
             self.TicTacToe.frame = CGRect(x: randX, y: randY, width: self.TicTacToe.frame.size.width, height: self.TicTacToe.frame.size.height)
@@ -228,9 +228,9 @@ class HomeViewController: UIViewController {
     **/
 
         
-        let randX = CGFloat(Int(arc4random_uniform(0)) % Int(width))
-        let randY = CGFloat(Int(arc4random_uniform(0)) % Int(height))
-        let randTime = Double((Int(arc4random_uniform(0)) % 10) + 4)
+        let randX = CGFloat(Int(arc4random_uniform(UInt32(width))))
+        let randY = CGFloat(Int(arc4random_uniform(UInt32(height))))
+        let randTime = Double((Int(arc4random_uniform(10))) + 4)
         
        // let newPegHeight = origPegHeight + CGFloat(random() % 30)
        // let newPegWidth = origPegWidth + CGFloat(random() % 30)
@@ -262,9 +262,9 @@ class HomeViewController: UIViewController {
     
     func animateEightPuzzle(_ newOriginX: CGFloat, newOriginY: CGFloat)
     {
-        let randX = CGFloat(Int(arc4random_uniform(0)) % Int(width))
-        let randY = CGFloat(Int(arc4random_uniform(0)) % Int(height))
-        let randTime = Double((Int(arc4random_uniform(0)) % 5) + 10)
+        let randX = CGFloat(Int(arc4random_uniform(UInt32(width))))
+        let randY = CGFloat(Int(arc4random_uniform(UInt32(height))))
+        let randTime = Double((Int(arc4random_uniform(5))) + 10)
         
         UIView.animate(withDuration: randTime, delay: 0, options:  [UIViewAnimationOptions.allowUserInteraction, UIViewAnimationOptions.beginFromCurrentState], animations: {
             self.EightPuzzle.frame = CGRect(x: randX, y: randY, width: self.EightPuzzle.frame.size.width, height: self.EightPuzzle.frame.size.height)
@@ -275,9 +275,9 @@ class HomeViewController: UIViewController {
     
     func animateConnectFour(_ newOriginX: CGFloat, newOriginY: CGFloat)
     {
-        let randX = CGFloat(Int(arc4random_uniform(0)) % Int(width))
-        let randY = CGFloat(Int(arc4random_uniform(0)) % Int(height))
-        let randTime = Double((Int(arc4random_uniform(0)) % 5) + 6)
+        let randX = CGFloat(Int(arc4random_uniform(UInt32(width))))
+        let randY = CGFloat(Int(arc4random_uniform(UInt32(height))))
+        let randTime = Double((Int(arc4random_uniform(5))) + 6)
         
         UIView.animate(withDuration: randTime, delay: 0, options:  [UIViewAnimationOptions.allowUserInteraction, UIViewAnimationOptions.beginFromCurrentState], animations: {
             self.ConnectFour.frame = CGRect(x: randX, y: randY, width: self.ConnectFour.frame.size.width, height: self.ConnectFour.frame.size.height)

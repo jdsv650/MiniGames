@@ -100,9 +100,9 @@ class PegBoardViewController: UIViewController {
             print("Open check for valid move")
             if pegBoard.checkForValidDiagonalMove(selectedPegTag, finishTagnumber: sender.tag)
             {
-                pegBoard.removePeg(selectedPegTag)
-                pegBoard.updateHoleStatus(sender.tag, status: PegBoard.Hole.filled)
-                pegBoard.removeJumpedPeg(selectedPegTag, finishTagnumber: sender.tag)
+                let _ = pegBoard.removePeg(selectedPegTag)
+                let _ = pegBoard.updateHoleStatus(sender.tag, status: PegBoard.Hole.filled)
+                let _ = pegBoard.removeJumpedPeg(selectedPegTag, finishTagnumber: sender.tag)
                 isPegSelected = false
                 drawBoard()
             }

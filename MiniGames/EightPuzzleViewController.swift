@@ -22,6 +22,7 @@ class EightPuzzleViewController: UIViewController {
     @IBOutlet weak var bottomMiddle: UIButton!
     @IBOutlet weak var bottomRight: UIButton!
     
+    let tileColor = UIColor(red: 79/255, green: 173/255, blue: 246/255, alpha: 1.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,12 +87,11 @@ class EightPuzzleViewController: UIViewController {
     {
         if theButton.title(for: UIControlState()) == ""
         {
-            theButton.backgroundColor = UIColor.white
+            theButton.backgroundColor = UIColor.black
         }
         else
         {
-            theButton.backgroundColor = UIColor(red: 0.98, green: 0.50, blue: 0.01, alpha: 1.0)
-                // blue UIColor(red: 0.40, green: 0.80, blue: 1.0, alpha: 1.0)
+           theButton.backgroundColor = #colorLiteral(red: 0.01086394209, green: 0.6895962358, blue: 0.9880219102, alpha: 1)
         }
     }
     
@@ -310,7 +310,7 @@ class EightPuzzleViewController: UIViewController {
         // get 9 unique random numbers in range
         while numbers.count < 9
         {
-            let randomTileNumber = Int(arc4random_uniform(0)) % 9
+            let randomTileNumber = Int(arc4random_uniform(9))
             var isFound = false
             
             for num in numbers
