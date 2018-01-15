@@ -10,11 +10,6 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Helvetica.ttc">
-            <string>Helvetica</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Mini Games-->
         <scene sceneID="Q5I-9m-JmA">
@@ -66,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R2i-nm-9K4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="895" y="-161"/>
+            <point key="canvasLocation" x="1041" y="-78"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SYx-WA-nEo">
@@ -982,7 +977,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v0y-a1-3el" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1404.5" y="-184.5"/>
+            <point key="canvasLocation" x="1569" y="-24"/>
         </scene>
         <!--Eight Puzzle View Controller-->
         <scene sceneID="kBV-31-gP5">
@@ -1403,80 +1398,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1k-MY-eZf">
-                                <rect key="frame" x="46" y="205.5" width="283" height="72"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="YkN-tm-Nal"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="u0t-NP-RSH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="One Player" image="stickman.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Abb-TJ-rxh" kind="push" identifier="OnePSegue" id="yXD-Kx-Fxc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oso-J4-ulM">
-                                <rect key="frame" x="46" y="297.5" width="283" height="72"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="CHg-VM-EEW"/>
-                                    <constraint firstAttribute="height" constant="72" id="d7T-dj-cuc"/>
-                                </constraints>
-                                <state key="normal" title="Two Player " image="stickmen.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Abb-TJ-rxh" kind="push" identifier="TwoPSegue" id="yy3-a0-l36"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEe-vq-ebT">
-                                <rect key="frame" x="46" y="389.5" width="283" height="72"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="vUv-Kk-1Mw"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="wTK-Bs-8o4"/>
-                                </constraints>
-                                <state key="normal" title="Slingshot" image="stickmenWithSlingshots.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="1Rg-Dv-cTe" kind="push" identifier="SlingshotSegue" id="bbh-av-x89"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beanbag.png" translatesAutoresizingMaskIntoConstraints="NO" id="cl1-Cg-YWM">
-                                <rect key="frame" x="251" y="441.5" width="78" height="78"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="78" id="022-Zx-45U"/>
-                                    <constraint firstAttribute="height" constant="78" id="8x1-Qf-vVQ"/>
-                                </constraints>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="vMy-yW-3Xd">
+                                <rect key="frame" x="67" y="148" width="154" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="0t1-Io-iMb">
+                                <rect key="frame" x="67" y="242" width="172" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q6v-JI-HZj">
+                                <rect key="frame" x="67" y="379" width="209" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Oso-J4-ulM" firstAttribute="top" secondItem="u1k-MY-eZf" secondAttribute="bottom" constant="20" id="75Z-Di-2z5"/>
-                            <constraint firstItem="cl1-Cg-YWM" firstAttribute="top" secondItem="wEe-vq-ebT" secondAttribute="bottom" constant="-20" id="HH7-1P-G4F"/>
-                            <constraint firstItem="Oso-J4-ulM" firstAttribute="centerY" secondItem="ana-48-fcJ" secondAttribute="centerY" id="LoO-q6-sjN"/>
-                            <constraint firstItem="u1k-MY-eZf" firstAttribute="centerX" secondItem="ana-48-fcJ" secondAttribute="centerX" id="MSp-ms-lLA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="u1k-MY-eZf" secondAttribute="trailing" constant="30" id="Sg1-Z2-P72"/>
-                            <constraint firstItem="cl1-Cg-YWM" firstAttribute="trailing" secondItem="wEe-vq-ebT" secondAttribute="trailing" id="VHQ-zz-BeA"/>
-                            <constraint firstItem="Oso-J4-ulM" firstAttribute="leading" secondItem="ana-48-fcJ" secondAttribute="leadingMargin" constant="30" id="XiH-45-uHr"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wEe-vq-ebT" secondAttribute="trailing" constant="30" id="a5L-a3-aC6"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Oso-J4-ulM" secondAttribute="trailing" constant="30" id="cmc-8c-ko0"/>
-                            <constraint firstItem="wEe-vq-ebT" firstAttribute="centerX" secondItem="ana-48-fcJ" secondAttribute="centerX" id="etv-Fk-crt"/>
-                            <constraint firstItem="wEe-vq-ebT" firstAttribute="top" secondItem="Oso-J4-ulM" secondAttribute="bottom" constant="20" id="gRb-Ej-k63"/>
-                            <constraint firstItem="Oso-J4-ulM" firstAttribute="centerX" secondItem="ana-48-fcJ" secondAttribute="centerX" id="i3j-HG-hkU"/>
-                            <constraint firstItem="u1k-MY-eZf" firstAttribute="leading" secondItem="ana-48-fcJ" secondAttribute="leadingMargin" constant="30" id="oI3-Fm-4cq"/>
-                            <constraint firstItem="wEe-vq-ebT" firstAttribute="leading" secondItem="ana-48-fcJ" secondAttribute="leadingMargin" constant="30" id="tF1-ju-hOR"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tic Tac Toe" id="i6F-Ii-zY0"/>
+                    <connections>
+                        <outlet property="TicTacToeSingle" destination="vMy-yW-3Xd" id="A1n-oj-A4L"/>
+                        <outlet property="TicTacToeTwo" destination="0t1-Io-iMb" id="4Za-6N-vNH"/>
+                        <outlet property="TicTacToeTwoSlingshot" destination="Q6v-JI-HZj" id="a3P-dR-CUA"/>
+                        <outlet property="mainView" destination="ana-48-fcJ" id="JoZ-7N-jcO"/>
+                        <segue destination="Abb-TJ-rxh" kind="push" identifier="TXOSegue" id="Jgm-2j-e8J"/>
+                        <segue destination="1Rg-Dv-cTe" kind="push" identifier="TXOSlingshotSegue" id="28c-Ny-kYv"/>
+                        <segue destination="Abb-TJ-rxh" kind="push" identifier="TXOTwoSegue" id="bll-Fd-SPQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N50-Bp-xYp" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="-820"/>
+            <point key="canvasLocation" x="1065" y="-868"/>
         </scene>
         <!--Tic Tac Toe Game View Controller-->
         <scene sceneID="gia-cE-yQt">
@@ -1490,176 +1440,126 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jaf-Mu-bIi">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jaf-Mu-bIi">
                                 <rect key="frame" x="31.5" y="84" width="312" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ova-Yj-sCI">
+                                    <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ova-Yj-sCI">
                                         <rect key="frame" x="20" y="20" width="85" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" backgroundImage="poolWater.png">
+                                        <state key="normal" backgroundImage="Bubbles.png">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="KGE-F1-GW5"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNx-ZX-ERk">
+                                    <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNx-ZX-ERk">
                                         <rect key="frame" x="118" y="20" width="85" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" backgroundImage="poolWater.png"/>
+                                        <state key="normal" backgroundImage="Bubbles.png"/>
                                         <connections>
                                             <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="D2x-KP-zHs"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWg-BV-Cuj">
+                                    <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWg-BV-Cuj">
                                         <rect key="frame" x="215" y="20" width="85" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" backgroundImage="poolWater.png">
+                                        <state key="normal" backgroundImage="Bubbles.png">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="tMI-V8-8gf"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yW-uz-MJJ">
+                                    <button opaque="NO" tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yW-uz-MJJ">
                                         <rect key="frame" x="215" y="113" width="85" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" backgroundImage="poolWater.png">
+                                        <state key="normal" backgroundImage="Bubbles.png">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="gNy-L1-hff"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mp-4C-Zn0">
+                                    <button opaque="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mp-4C-Zn0">
                                         <rect key="frame" x="118" y="113" width="85" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" backgroundImage="poolWater.png">
+                                        <state key="normal" backgroundImage="Bubbles.png">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="fOt-Dd-tlJ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ava-gb-PLg">
+                                    <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ava-gb-PLg">
                                         <rect key="frame" x="20" y="113" width="85" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" backgroundImage="poolWater.png">
+                                        <state key="normal" backgroundImage="Bubbles.png">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="rV7-0R-UJB"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGf-0Y-dqZ">
+                                    <button opaque="NO" tag="31" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGf-0Y-dqZ">
                                         <rect key="frame" x="20" y="206" width="85" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" backgroundImage="poolWater.png">
+                                        <state key="normal" backgroundImage="Bubbles.png">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="ta7-0T-AhX"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rg1-vk-m36">
+                                    <button opaque="NO" tag="32" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rg1-vk-m36">
                                         <rect key="frame" x="118" y="206" width="85" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" backgroundImage="poolWater.png">
+                                        <state key="normal" backgroundImage="Bubbles.png">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="ySa-Rm-lg1"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUn-4U-fil">
+                                    <button opaque="NO" tag="33" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUn-4U-fil">
                                         <rect key="frame" x="215" y="206" width="85" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" backgroundImage="poolWater.png">
+                                        <state key="normal" backgroundImage="Bubbles.png">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="getUserMove:" destination="Abb-TJ-rxh" eventType="touchUpInside" id="y9V-qf-4ED"/>
                                         </connections>
                                     </button>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="qtE-Vw-e3V">
-                                        <rect key="frame" x="70" y="314" width="180" height="29"/>
-                                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="qtE-Vw-e3V">
+                                        <rect key="frame" x="20" y="314" width="280" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <segments>
-                                            <segment title="" image="star.png" width="60"/>
-                                            <segment title="" image="stars2.png" width="60"/>
-                                            <segment title="" image="stars3.png" width="60"/>
+                                            <segment title="Easy"/>
+                                            <segment title="Medium"/>
+                                            <segment title="Hard"/>
                                         </segments>
-                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.30876920870000002" green="0.67916624059999997" blue="0.9628322721" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <action selector="levelSelected:" destination="Abb-TJ-rxh" eventType="valueChanged" id="t4Q-LX-mhw"/>
                                         </connections>
                                     </segmentedControl>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Medium" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgB-sp-mv8">
-                                        <rect key="frame" x="97" y="350" width="127" height="21"/>
-                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="Y8V-wM-VVp"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="VGf-0Y-dqZ" firstAttribute="top" secondItem="Rg1-vk-m36" secondAttribute="top" id="12m-C3-ob2"/>
-                                    <constraint firstItem="gNx-ZX-ERk" firstAttribute="baseline" secondItem="ZWg-BV-Cuj" secondAttribute="baseline" id="2db-GJ-aeh"/>
-                                    <constraint firstItem="ZWg-BV-Cuj" firstAttribute="top" secondItem="gNx-ZX-ERk" secondAttribute="top" id="5k3-rM-Jyv"/>
-                                    <constraint firstItem="ava-gb-PLg" firstAttribute="top" secondItem="4mp-4C-Zn0" secondAttribute="top" id="8cL-ai-1Wv"/>
-                                    <constraint firstItem="ova-Yj-sCI" firstAttribute="firstBaseline" secondItem="ZWg-BV-Cuj" secondAttribute="firstBaseline" id="AsA-Gr-2vf"/>
-                                    <constraint firstAttribute="trailing" secondItem="ZWg-BV-Cuj" secondAttribute="trailing" constant="12" id="B52-2o-5yv"/>
-                                    <constraint firstItem="ZWg-BV-Cuj" firstAttribute="baseline" secondItem="ova-Yj-sCI" secondAttribute="baseline" id="DSC-7z-wAL"/>
-                                    <constraint firstItem="Rg1-vk-m36" firstAttribute="trailing" secondItem="4mp-4C-Zn0" secondAttribute="trailing" id="ET6-Y5-IpI"/>
-                                    <constraint firstItem="ova-Yj-sCI" firstAttribute="firstBaseline" secondItem="gNx-ZX-ERk" secondAttribute="firstBaseline" id="FSY-SU-0St"/>
-                                    <constraint firstItem="4mp-4C-Zn0" firstAttribute="baseline" secondItem="1yW-uz-MJJ" secondAttribute="baseline" id="GFg-GM-Io0"/>
-                                    <constraint firstItem="1yW-uz-MJJ" firstAttribute="top" secondItem="4mp-4C-Zn0" secondAttribute="top" id="HA3-9U-TM6"/>
-                                    <constraint firstAttribute="height" constant="480" id="HL1-Tk-ebp"/>
-                                    <constraint firstItem="gNx-ZX-ERk" firstAttribute="firstBaseline" secondItem="ZWg-BV-Cuj" secondAttribute="firstBaseline" id="IyZ-kl-DQn"/>
-                                    <constraint firstItem="ava-gb-PLg" firstAttribute="leading" secondItem="ova-Yj-sCI" secondAttribute="leading" id="JPD-Ep-P52"/>
-                                    <constraint firstItem="CUn-4U-fil" firstAttribute="firstBaseline" secondItem="Rg1-vk-m36" secondAttribute="firstBaseline" id="JQP-EN-Ymh"/>
-                                    <constraint firstItem="gNx-ZX-ERk" firstAttribute="baseline" secondItem="ova-Yj-sCI" secondAttribute="baseline" id="N1H-Rz-QjZ"/>
-                                    <constraint firstItem="vgB-sp-mv8" firstAttribute="leading" secondItem="jaf-Mu-bIi" secondAttribute="leading" constant="97" id="NpD-pA-UGS"/>
-                                    <constraint firstItem="ava-gb-PLg" firstAttribute="firstBaseline" secondItem="1yW-uz-MJJ" secondAttribute="firstBaseline" id="QMH-xl-Ue9"/>
-                                    <constraint firstItem="qtE-Vw-e3V" firstAttribute="leading" secondItem="jaf-Mu-bIi" secondAttribute="leading" constant="70" id="RgL-Fv-FAD"/>
-                                    <constraint firstItem="gNx-ZX-ERk" firstAttribute="leading" secondItem="ova-Yj-sCI" secondAttribute="trailing" constant="13" id="S5q-ws-6j9"/>
-                                    <constraint firstItem="Rg1-vk-m36" firstAttribute="baseline" secondItem="VGf-0Y-dqZ" secondAttribute="baseline" id="UgF-Lj-h5l"/>
-                                    <constraint firstItem="ova-Yj-sCI" firstAttribute="top" secondItem="jaf-Mu-bIi" secondAttribute="top" constant="20" id="Uvr-VR-Gqa"/>
-                                    <constraint firstItem="ZWg-BV-Cuj" firstAttribute="leading" secondItem="gNx-ZX-ERk" secondAttribute="trailing" constant="12" id="Uzl-Ax-PL0"/>
-                                    <constraint firstItem="4mp-4C-Zn0" firstAttribute="trailing" secondItem="gNx-ZX-ERk" secondAttribute="trailing" id="W0G-EH-H4j"/>
-                                    <constraint firstItem="qtE-Vw-e3V" firstAttribute="centerX" secondItem="vgB-sp-mv8" secondAttribute="centerX" id="eFw-U2-cus"/>
-                                    <constraint firstAttribute="width" constant="312" id="eLR-6I-TxV"/>
-                                    <constraint firstItem="ava-gb-PLg" firstAttribute="baseline" secondItem="1yW-uz-MJJ" secondAttribute="baseline" id="f8v-dP-hZM"/>
-                                    <constraint firstItem="VGf-0Y-dqZ" firstAttribute="top" secondItem="ava-gb-PLg" secondAttribute="bottom" constant="8" symbolic="YES" id="fNQ-gg-R0Y"/>
-                                    <constraint firstItem="ava-gb-PLg" firstAttribute="firstBaseline" secondItem="4mp-4C-Zn0" secondAttribute="firstBaseline" id="fRf-uT-c8f"/>
-                                    <constraint firstItem="1yW-uz-MJJ" firstAttribute="leading" secondItem="ZWg-BV-Cuj" secondAttribute="leading" id="k6R-BF-Npt"/>
-                                    <constraint firstItem="VGf-0Y-dqZ" firstAttribute="baseline" secondItem="CUn-4U-fil" secondAttribute="baseline" id="lWd-Om-cZs"/>
-                                    <constraint firstItem="VGf-0Y-dqZ" firstAttribute="firstBaseline" secondItem="CUn-4U-fil" secondAttribute="firstBaseline" id="mUy-Jh-rdd"/>
-                                    <constraint firstItem="Rg1-vk-m36" firstAttribute="baseline" secondItem="CUn-4U-fil" secondAttribute="baseline" id="orW-TG-e5s"/>
-                                    <constraint firstItem="1yW-uz-MJJ" firstAttribute="firstBaseline" secondItem="4mp-4C-Zn0" secondAttribute="firstBaseline" id="pr5-Hd-x9B"/>
-                                    <constraint firstItem="ava-gb-PLg" firstAttribute="top" secondItem="ova-Yj-sCI" secondAttribute="bottom" constant="8" symbolic="YES" id="qku-cb-aYX"/>
-                                    <constraint firstItem="qtE-Vw-e3V" firstAttribute="top" secondItem="VGf-0Y-dqZ" secondAttribute="bottom" constant="23" id="sC3-o1-Ob4"/>
-                                    <constraint firstItem="qtE-Vw-e3V" firstAttribute="centerX" secondItem="Rg1-vk-m36" secondAttribute="centerX" id="sgS-OV-m2Y"/>
-                                    <constraint firstItem="Rg1-vk-m36" firstAttribute="firstBaseline" secondItem="VGf-0Y-dqZ" secondAttribute="firstBaseline" id="tHV-Wo-RPn"/>
-                                    <constraint firstItem="VGf-0Y-dqZ" firstAttribute="leading" secondItem="ava-gb-PLg" secondAttribute="leading" id="ttg-5w-D8U"/>
-                                    <constraint firstItem="vgB-sp-mv8" firstAttribute="top" secondItem="qtE-Vw-e3V" secondAttribute="bottom" constant="8" symbolic="YES" id="ucI-nN-663"/>
-                                    <constraint firstItem="ava-gb-PLg" firstAttribute="baseline" secondItem="4mp-4C-Zn0" secondAttribute="baseline" id="ul1-dO-oRC"/>
-                                    <constraint firstItem="ova-Yj-sCI" firstAttribute="top" secondItem="gNx-ZX-ERk" secondAttribute="top" id="wpP-xb-9Mn"/>
-                                    <constraint firstItem="1yW-uz-MJJ" firstAttribute="trailing" secondItem="ZWg-BV-Cuj" secondAttribute="trailing" id="y1c-h2-2NC"/>
-                                    <constraint firstItem="1yW-uz-MJJ" firstAttribute="leading" secondItem="CUn-4U-fil" secondAttribute="leading" id="ySN-VT-KhR"/>
-                                    <constraint firstItem="CUn-4U-fil" firstAttribute="top" secondItem="Rg1-vk-m36" secondAttribute="top" id="zt8-Pk-YNe"/>
-                                </constraints>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="jaf-Mu-bIi" firstAttribute="centerX" secondItem="cSO-Iq-855" secondAttribute="centerX" id="8sH-bI-IdB"/>
-                            <constraint firstItem="jaf-Mu-bIi" firstAttribute="top" secondItem="3wF-dx-nt5" secondAttribute="bottom" constant="20" id="gS3-e8-yhN"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KwJ-W4-UTw"/>
                     <connections>
@@ -1673,14 +1573,13 @@
                         <outlet property="button3_1_Outlet" destination="VGf-0Y-dqZ" id="EPx-Yv-Kox"/>
                         <outlet property="button3_2_Outlet" destination="Rg1-vk-m36" id="2VR-qc-CGQ"/>
                         <outlet property="button3_3_Outlet" destination="CUn-4U-fil" id="0V2-PQ-8oA"/>
-                        <outlet property="level_Label" destination="vgB-sp-mv8" id="6yV-eC-Jac"/>
                         <outlet property="level_Outlet" destination="qtE-Vw-e3V" id="b6s-ZN-ZeV"/>
                         <outlet property="view" destination="cSO-Iq-855" id="yyv-ip-dy9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FCk-GD-v1I" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1548" y="-859"/>
+            <point key="canvasLocation" x="1600" y="-933"/>
         </scene>
         <!--Tic Slingshot View Controller-->
         <scene sceneID="Re6-TQ-45E">
@@ -1846,28 +1745,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xj-aw-w5d" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2067" y="-932"/>
+            <point key="canvasLocation" x="2084" y="-277"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Bubbles.png" width="200" height="200"/>
         <image name="beanbag.png" width="45" height="44"/>
         <image name="blackCircle.png" width="200" height="201"/>
         <image name="bubble.png" width="425" height="425"/>
-        <image name="poolWater.png" width="85" height="85"/>
         <image name="poolWaterWithXO.png" width="85" height="85"/>
         <image name="red.png" width="40" height="40"/>
         <image name="slingshot1.png" width="54" height="80"/>
-        <image name="star.png" width="30" height="30"/>
-        <image name="stars2.png" width="30" height="30"/>
-        <image name="stars3.png" width="30" height="30"/>
-        <image name="stickman.png" width="40" height="40"/>
-        <image name="stickmen.png" width="80" height="80"/>
-        <image name="stickmenWithSlingshots.png" width="80" height="80"/>
         <image name="tee.png" width="50" height="50"/>
         <image name="white.png" width="40" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yy3-a0-l36"/>
+        <segue reference="bll-Fd-SPQ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

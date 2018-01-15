@@ -24,7 +24,6 @@ class TicTacToeGameViewController: UIViewController {
     @IBOutlet weak var button3_2_Outlet : UIButton!
     @IBOutlet weak var button3_3_Outlet : UIButton!
     @IBOutlet weak var level_Outlet: UISegmentedControl!
-    @IBOutlet weak var level_Label: UILabel!
     @IBOutlet weak var boardView: UIView!
     
     
@@ -39,12 +38,12 @@ class TicTacToeGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        boardView.backgroundColor = UIColor(patternImage: UIImage(named: "beachsand4.png")!)
+        boardView.backgroundColor = UIColor.black //UIColor(patternImage: UIImage(named: "beachsand4.png")!)
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "BubblesBackground.png")!)
         
-        buttonBackStr = "poolWater.png"
-        buttonXStr = "poolX.png"
-        buttonOStr = "poolO.png"
+        buttonBackStr = "Bubbles.png"
+        buttonXStr = "BubblesX.png"
+        buttonOStr = "BubblesO.png"
         
         self.initialize() // Clear board '-'
         
@@ -53,12 +52,10 @@ class TicTacToeGameViewController: UIViewController {
         if isVersusComp
         {
             level_Outlet.isHidden = false
-            level_Label.isHidden = false
         }
         else
         {
             level_Outlet.isHidden = true
-            level_Label.isHidden = true
         }
     }
     
@@ -544,20 +541,7 @@ class TicTacToeGameViewController: UIViewController {
     
     @IBAction func levelSelected(_ sender: AnyObject)
     {
-        if level_Outlet.selectedSegmentIndex == 0
-        {
-            level_Label.text = "Easy"
-        }
-        else if level_Outlet.selectedSegmentIndex == 1
-        {
-            level_Label.text = "Medium"
-        }
-        else
-        {
-            level_Label.text = "Hard"
-        }
         self.initialize()
-        
     }
     
     
@@ -579,6 +563,7 @@ class TicTacToeGameViewController: UIViewController {
         let alert = UIAlertController(title: title, message: theMessage, preferredStyle: UIAlertControllerStyle.actionSheet)
         let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {  (action) in self.initialize() })
         
+        alert.view.tintColor = #colorLiteral(red: 0.01086394209, green: 0.6895962358, blue: 0.9880219102, alpha: 1)
         alert.addAction(action)
         self.present(alert, animated: true, completion: nil)
     }

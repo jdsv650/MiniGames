@@ -11,7 +11,6 @@ import UIKit
 class HomeViewController: UIViewController {
 
     
-    
     @IBOutlet var mainView: UIView!
     @IBOutlet weak var TicTacToe: UIImageView!
     @IBOutlet weak var ConnectFour: UIImageView!
@@ -31,7 +30,6 @@ class HomeViewController: UIViewController {
     var origEightHeight: CGFloat!
     
 
-    
     @IBAction func ticTacToePressed(_ sender: UIButton) {
         
       //  self.performSegueWithIdentifier("TicTacToeSegue", sender: self)
