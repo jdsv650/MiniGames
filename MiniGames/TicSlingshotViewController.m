@@ -110,7 +110,7 @@ int row,col;
 {
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:theMessage preferredStyle:UIAlertControllerStyleActionSheet];
-    
+
     UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^void (UIAlertAction *action) {
         [self initialize];
     } ];

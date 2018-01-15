@@ -46,7 +46,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Mini Games" id="pZd-a4-MZx"/>
+                    <navigationItem key="navigationItem" title="Mini Games" id="pZd-a4-MZx">
+                        <barButtonItem key="leftBarButtonItem" image="icons8-menu.png" id="VJ1-97-EfB">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="SAO-h8-R0h" kind="push" id="zQj-sF-cX8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="ConnectFour" destination="dpa-3g-3oG" id="JM4-jK-Mg1"/>
                         <outlet property="EightPuzzle" destination="w50-Hw-8nm" id="WVn-Zt-hxv"/>
@@ -1386,6 +1393,40 @@
             </objects>
             <point key="canvasLocation" x="1244" y="772"/>
         </scene>
+        <!--Info-->
+        <scene sceneID="Yrr-SU-XZR">
+            <objects>
+                <viewController id="SAO-h8-R0h" customClass="InfoViewController" customModule="MiniGames" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KmZ-Vg-ZJq"/>
+                        <viewControllerLayoutGuide type="bottom" id="t04-cg-wyX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Un1-SD-m1Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="lg6-uJ-VQf">
+                                <rect key="frame" x="54" y="103" width="158" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="M89-lF-U2a">
+                                <rect key="frame" x="180" y="244" width="143" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Info" id="jV9-oP-4Ac"/>
+                    <connections>
+                        <outlet property="RateIV" destination="lg6-uJ-VQf" id="3uK-HO-Avg"/>
+                        <outlet property="ShareIV" destination="M89-lF-U2a" id="hbp-lZ-LGG"/>
+                        <outlet property="mainView" destination="Un1-SD-m1Z" id="Jio-BI-Tul"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UhE-TT-YRR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="567.5" y="-989.5"/>
+        </scene>
         <!--Tic Tac Toe-->
         <scene sceneID="9il-yC-ifj">
             <objects>
@@ -1608,7 +1649,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" backgroundImage="poolWaterWithXO.png">
+                                        <state key="normal" backgroundImage="Bubbles.png">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -1620,7 +1661,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" backgroundImage="poolWaterWithXO.png">
+                                        <state key="normal" backgroundImage="Bubbles.png">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -1632,7 +1673,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" backgroundImage="poolWaterWithXO.png">
+                                        <state key="normal" backgroundImage="Bubbles.png">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -1644,7 +1685,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" backgroundImage="poolWaterWithXO.png">
+                                        <state key="normal" backgroundImage="Bubbles.png">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -1656,7 +1697,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" backgroundImage="poolWaterWithXO.png">
+                                        <state key="normal" backgroundImage="Bubbles.png">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -1668,7 +1709,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" backgroundImage="poolWaterWithXO.png">
+                                        <state key="normal" backgroundImage="Bubbles.png">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -1680,7 +1721,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" backgroundImage="poolWaterWithXO.png">
+                                        <state key="normal" backgroundImage="Bubbles.png">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -1692,7 +1733,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" backgroundImage="poolWaterWithXO.png">
+                                        <state key="normal" backgroundImage="Bubbles.png">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -1704,7 +1745,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" backgroundImage="poolWaterWithXO.png">
+                                        <state key="normal" backgroundImage="Bubbles.png">
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -1760,7 +1801,7 @@
         <image name="beanbag.png" width="45" height="44"/>
         <image name="blackCircle.png" width="200" height="201"/>
         <image name="bubble.png" width="425" height="425"/>
-        <image name="poolWaterWithXO.png" width="85" height="85"/>
+        <image name="icons8-menu.png" width="32" height="32"/>
         <image name="red.png" width="40" height="40"/>
         <image name="slingshot1.png" width="54" height="80"/>
         <image name="tee.png" width="50" height="50"/>

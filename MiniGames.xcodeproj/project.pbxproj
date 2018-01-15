@@ -50,6 +50,8 @@
 		1A5F7168200C0D8D00531D76 /* Bubbles.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5F7167200C0D8D00531D76 /* Bubbles.png */; };
 		1A5F716A200D1AF500531D76 /* BubblesXO.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5F7169200D1AF500531D76 /* BubblesXO.png */; };
 		1A9A2CEA200BAE8E0083F956 /* load_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A2CE9200BAE8E0083F956 /* load_background.png */; };
+		1AD0E4AB200D390D00780F46 /* icons8-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AD0E4AA200D390D00780F46 /* icons8-menu.png */; };
+		1AD0E4AD200D3AEB00780F46 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0E4AC200D3AEB00780F46 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +102,8 @@
 		1A5F7167200C0D8D00531D76 /* Bubbles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bubbles.png; sourceTree = "<group>"; };
 		1A5F7169200D1AF500531D76 /* BubblesXO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BubblesXO.png; sourceTree = "<group>"; };
 		1A9A2CE9200BAE8E0083F956 /* load_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = load_background.png; sourceTree = "<group>"; };
+		1AD0E4AA200D390D00780F46 /* icons8-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-menu.png"; sourceTree = "<group>"; };
+		1AD0E4AC200D3AEB00780F46 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,7 @@
 				1A1E83CC1BDC42CD000866A2 /* LaunchScreen.storyboard */,
 				1A1E83CF1BDC42CD000866A2 /* Info.plist */,
 				1A1E83D91BDD0DC8000866A2 /* HomeViewController.swift */,
+				1AD0E4AC200D3AEB00780F46 /* InfoViewController.swift */,
 				1A1E83DB1BDD2C0F000866A2 /* PegBoardViewController.swift */,
 				1A1E83DD1BDD2C25000866A2 /* ConnectFourViewController.swift */,
 				1A1E83DF1BDD2C38000866A2 /* EightPuzzleViewController.swift */,
@@ -190,6 +195,7 @@
 				1A28A9021BE6E74300CB8C30 /* stickman.png */,
 				1A28A9031BE6E74300CB8C30 /* stickmen.png */,
 				1A28A9041BE6E74300CB8C30 /* stickmenWithSlingshots.png */,
+				1AD0E4AA200D390D00780F46 /* icons8-menu.png */,
 			);
 			name = TicTacToe;
 			sourceTree = "<group>";
@@ -314,6 +320,7 @@
 				1A1E83CB1BDC42CD000866A2 /* Assets.xcassets in Resources */,
 				1A28A90C1BE6E74300CB8C30 /* beanbag.png in Resources */,
 				1A5F7168200C0D8D00531D76 /* Bubbles.png in Resources */,
+				1AD0E4AB200D390D00780F46 /* icons8-menu.png in Resources */,
 				1A4C085C1BE4514000AACA3B /* red.png in Resources */,
 				1A5F7166200C0C8F00531D76 /* BubblesO.png in Resources */,
 				1A28A8B31BE5442C00CB8C30 /* tee.png in Resources */,
@@ -340,6 +347,7 @@
 				1A4C08601BE4534F00AACA3B /* Player.swift in Sources */,
 				1A1E83DA1BDD0DC8000866A2 /* HomeViewController.swift in Sources */,
 				1A4C08611BE4534F00AACA3B /* Board.swift in Sources */,
+				1AD0E4AD200D3AEB00780F46 /* InfoViewController.swift in Sources */,
 				1A1E83DE1BDD2C25000866A2 /* ConnectFourViewController.swift in Sources */,
 				1A28A9131BE7435600CB8C30 /* TicSlingshotViewController.m in Sources */,
 				1A28A8B01BE5442C00CB8C30 /* PegBoard.swift in Sources */,
