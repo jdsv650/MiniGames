@@ -220,5 +220,9 @@ class InfoViewController: UIViewController, SKStoreProductViewControllerDelegate
         }
         
     }
+    
+    func productViewControllerDidFinish(_ viewController: SKStoreProductViewController) {
+        viewController.dismiss(animated: true, completion: nil)
+    }
 
 }
