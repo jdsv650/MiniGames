@@ -1384,7 +1384,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cuY-xB-6yZ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1307" y="615"/>
+            <point key="canvasLocation" x="1244" y="772"/>
         </scene>
         <!--Tic Tac Toe-->
         <scene sceneID="9il-yC-ifj">
@@ -1440,9 +1440,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jaf-Mu-bIi">
-                                <rect key="frame" x="31.5" y="84" width="312" height="480"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jaf-Mu-bIi">
+                                <rect key="frame" x="32" y="84" width="312" height="360"/>
                                 <subviews>
                                     <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ova-Yj-sCI">
                                         <rect key="frame" x="20" y="20" width="85" height="85"/>
@@ -1557,9 +1556,17 @@
                                     </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="360" id="lG0-Kf-7qk"/>
+                                    <constraint firstAttribute="width" constant="312" id="sga-Vf-8Py"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jaf-Mu-bIi" firstAttribute="top" secondItem="3wF-dx-nt5" secondAttribute="bottom" constant="20" id="3ta-zT-UtD"/>
+                            <constraint firstItem="jaf-Mu-bIi" firstAttribute="centerX" secondItem="cSO-Iq-855" secondAttribute="centerX" id="uCh-02-Noq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KwJ-W4-UTw"/>
                     <connections>
@@ -1579,7 +1586,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FCk-GD-v1I" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1600" y="-933"/>
+            <point key="canvasLocation" x="1599.5" y="-933.5"/>
         </scene>
         <!--Tic Slingshot View Controller-->
         <scene sceneID="Re6-TQ-45E">

@@ -40,12 +40,12 @@ int row,col;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    boardView.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"beachsand4.png"]];
+    boardView.backgroundColor = [UIColor blackColor];
     self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"BubblesBackground.png"]];
     
-    buttonBackStr = @"poolWaterWithXO.png";
-    buttonXStr = @"poolX.png";
-    buttonOStr = @"poolO.png";
+    buttonBackStr = @"BubblesXO.png";
+    buttonXStr = @"BubblesX.png";
+    buttonOStr = @"BubblesO.png";
 
     [beanBagOutlet setHidden:YES];
     [self initialize];  // clear board ...
