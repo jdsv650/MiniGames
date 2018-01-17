@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="o26-ws-N5C">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="Jhp-Hf-904">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1393,7 +1393,7 @@
             </objects>
             <point key="canvasLocation" x="1244" y="772"/>
         </scene>
-        <!--Info-->
+        <!--Share-->
         <scene sceneID="Yrr-SU-XZR">
             <objects>
                 <viewController id="SAO-h8-R0h" customClass="InfoViewController" customModule="MiniGames" customModuleProvider="target" sceneMemberID="viewController">
@@ -1416,7 +1416,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Info" id="jV9-oP-4Ac"/>
+                    <navigationItem key="navigationItem" title="Share" id="jV9-oP-4Ac"/>
                     <connections>
                         <outlet property="RateIV" destination="lg6-uJ-VQf" id="3uK-HO-Avg"/>
                         <outlet property="ShareIV" destination="M89-lF-U2a" id="hbp-lZ-LGG"/>

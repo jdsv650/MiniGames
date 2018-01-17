@@ -134,6 +134,16 @@ open class PegBoard
         return true
     }
     
+    func addPeg(_ tagNum: Int) -> Bool
+    {
+        let start = getIndexFromTagNumber(tagNum)
+        let startRow = start.row
+        let startCol = start.col
+        
+        board[startRow][startCol] = Hole.filled
+        return true
+    }
+    
     func removeJumpedPeg(_ startTagNum: Int, finishTagnumber: Int) -> Bool
     {
         let start = getIndexFromTagNumber(startTagNum)
