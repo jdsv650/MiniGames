@@ -1201,7 +1201,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DsL-bL-kLr">
-                                <rect key="frame" x="101" y="46" width="464" height="256"/>
+                                <rect key="frame" x="101" y="44" width="464" height="256"/>
                                 <subviews>
                                     <button opaque="NO" tag="40" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ya5-ay-o5y">
                                         <rect key="frame" x="20" y="196" width="36" height="36"/>
@@ -1255,7 +1255,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HM3-b5-CEb">
-                                        <rect key="frame" x="212" y="4" width="36" height="36"/>
+                                        <rect key="frame" x="212" y="2" width="36" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="36" id="qYp-4g-xqI"/>
                                         </constraints>
@@ -1411,7 +1411,7 @@
                                     <constraint firstItem="PN0-yY-gbQ" firstAttribute="bottom" secondItem="CC9-ti-Aoh" secondAttribute="bottom" id="Hcj-gv-KA2"/>
                                     <constraint firstItem="z8I-h8-FqH" firstAttribute="top" secondItem="LkY-7E-coe" secondAttribute="bottom" constant="60" id="ISM-PM-41A"/>
                                     <constraint firstItem="Piu-lF-Mch" firstAttribute="firstBaseline" secondItem="z8I-h8-FqH" secondAttribute="firstBaseline" id="IVx-vD-xu1"/>
-                                    <constraint firstItem="HM3-b5-CEb" firstAttribute="top" secondItem="DsL-bL-kLr" secondAttribute="top" constant="4" id="KtX-Sw-kye"/>
+                                    <constraint firstItem="HM3-b5-CEb" firstAttribute="top" secondItem="DsL-bL-kLr" secondAttribute="top" constant="2" id="KtX-Sw-kye"/>
                                     <constraint firstItem="bd8-DG-yaq" firstAttribute="firstBaseline" secondItem="tlZ-gc-WaY" secondAttribute="firstBaseline" id="LeZ-tL-IIO"/>
                                     <constraint firstItem="PN0-yY-gbQ" firstAttribute="firstBaseline" secondItem="Piu-lF-Mch" secondAttribute="firstBaseline" id="MID-3M-A8S"/>
                                     <constraint firstItem="ya5-ay-o5y" firstAttribute="baseline" secondItem="CC9-ti-Aoh" secondAttribute="baseline" id="McW-cX-V28"/>
@@ -1467,7 +1467,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="DsL-bL-kLr" firstAttribute="top" secondItem="bjI-sT-Qon" secondAttribute="bottom" constant="2" id="6QQ-9d-Ml3"/>
+                            <constraint firstItem="DsL-bL-kLr" firstAttribute="top" secondItem="bjI-sT-Qon" secondAttribute="bottom" id="6QQ-9d-Ml3"/>
                             <constraint firstItem="DsL-bL-kLr" firstAttribute="centerX" secondItem="cjN-W2-yBs" secondAttribute="centerX" id="UhD-Sm-B42"/>
                         </constraints>
                     </view>
