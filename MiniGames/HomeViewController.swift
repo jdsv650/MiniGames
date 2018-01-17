@@ -155,8 +155,8 @@ class HomeViewController: UIViewController {
         PegBoard.layer.zPosition = 1
         PegBoard.addSubview(PegLabel)
         
-        PegBoard.isHidden = true
-        PegLabel.isHidden = true
+        //PegBoard.isHidden = true
+        //PegLabel.isHidden = true
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -13,13 +13,11 @@ class PegBoardViewController: UIViewController {
     @IBOutlet var Holes: [UIButton]!
     
     var pegBoard = PegBoard()
-    //var isPegSelected = false
     var selectedPegTag:Int? = nil
     
     
     override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
-        return  UIInterfaceOrientationMask.landscapeLeft
-
+        return  [UIInterfaceOrientationMask.landscapeLeft, UIInterfaceOrientationMask.landscapeRight]
     }
     
     override var shouldAutorotate : Bool {
@@ -33,6 +31,8 @@ class PegBoardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "BubblesBackground.png")!)
+        
         let value = UIInterfaceOrientation.landscapeLeft.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
         
@@ -42,30 +42,53 @@ class PegBoardViewController: UIViewController {
     
     func drawBoard()
     {
+        removeAllHighlightButton()
+        
         for i in 0 ..< Holes.count
         {
             Holes[i].setTitleColor(UIColor.black, for: UIControlState.normal)
-            
             Holes[i].setTitle("", for: UIControlState.normal)
+            
             let currentHoleStatus = pegBoard.getHoleStatus(Holes[i].tag)
             if currentHoleStatus == PegBoard.Hole.open
             {
                 Holes[i].setBackgroundImage(UIImage(named: "blackCircle.png"), for: UIControlState.normal)
             } else if currentHoleStatus == PegBoard.Hole.filled
             {
-                Holes[i].setBackgroundImage(UIImage(named: "tee.png"), for: UIControlState.normal)
+                Holes[i].setBackgroundImage(UIImage(named: "pin2.png"), for: UIControlState.normal)
             }
         }
     }
     
-    
-    @IBAction func resetPressed(_ sender: UIButton) {
+    @IBAction func resetPegBoardPressed(_ sender: UIBarButtonItem) {
         
         //isPegSelected = false
         selectedPegTag = nil
         pegBoard.resetBoard()
         drawBoard()
     }
+    
+    func addHighlightButton(theButton :UIButton)
+    {
+        theButton.layer.borderWidth = 4
+        theButton.layer.borderColor = UIColor.green.cgColor
+    }
+    
+    func removeHighlightButton(theButton :UIButton)
+    {
+        theButton.layer.borderWidth = 4
+        theButton.layer.borderColor = UIColor.clear.cgColor
+    }
+    
+    func removeAllHighlightButton()
+    {
+        for button in Holes
+        {
+            button.layer.borderWidth = 4
+            button.layer.borderColor = UIColor.clear.cgColor
+        }
+    }
+    
     
     @IBAction func pegPressed(_ sender: UIButton) {
         
@@ -77,7 +100,8 @@ class PegBoardViewController: UIViewController {
             // check status
             if status == PegBoard.Hole.filled   // mark it
             {
-                sender.setTitle("X", for: UIControlState.normal)
+                //sender.setTitle("X", for: UIControlState.normal)
+                addHighlightButton(theButton: sender)
                 selectedPegTag = sender.tag
             }
             
@@ -88,7 +112,8 @@ class PegBoardViewController: UIViewController {
             
             if theTag == sender.tag  // deselect peg - same peg
             {
-                sender.setTitle("", for: UIControlState.normal)
+                //sender.setTitle("", for: UIControlState.normal)
+                removeHighlightButton(theButton: sender)
                 selectedPegTag = nil
             }
             else if status == PegBoard.Hole.filled
@@ -100,7 +125,8 @@ class PegBoardViewController: UIViewController {
                 
                 if let button = theButton
                 {
-                    button.setTitle("", for: UIControlState.normal)
+                   // button.setTitle("", for: UIControlState.normal)
+                    removeHighlightButton(theButton: button)
                     selectedPegTag = nil
                 }
             }
@@ -113,6 +139,7 @@ class PegBoardViewController: UIViewController {
                     let _ = pegBoard.updateHoleStatus(sender.tag, status: PegBoard.Hole.filled)
                     let _ = pegBoard.removeJumpedPeg(selectedPegTag!, finishTagnumber: sender.tag)
                     drawBoard()
+                    selectedPegTag = nil
                 }
                 else
                 {
@@ -120,7 +147,8 @@ class PegBoardViewController: UIViewController {
                     
                     if let button = theButton
                     {
-                        button.setTitle("", for: UIControlState.normal)
+                        //button.setTitle("", for: UIControlState.normal)
+                        removeHighlightButton(theButton: button)
                         selectedPegTag = nil
                     }
                     print("invalid move")
@@ -130,57 +158,7 @@ class PegBoardViewController: UIViewController {
         }
         
     }
-    
-    func getArrayIndexForSelectedTagNum() -> Int?
-    {
-        //  04,
-        //13, 15,
-        //22, 24, 26
-        // 31, 33, 35, 37
-        // 40, 42, 44, 46, 48
-        
-        if let sel = selectedPegTag
-        {
-            switch sel {
-            case 4:
-                return 0
-            case 13:
-                return 1
-            case 15:
-                return 2
-            case 22:
-                return 3
-            case 24:
-                return 4
-            case 26:
-                return 5
-            case 31:
-                return 6
-            case 33:
-                return 7
-            case 35:
-                return 8
-            case 37:
-                return 9
-                
-            case 40:
-                return 10
-            case 42:
-                return 11
-            case 44:
-                return 12
-            case 46:
-                return 13
-            case 48:
-                return 14
-            default:
-                return nil
-            }
-        }
-        
-       return nil
-    }
-    
+   
 }
 
 

@@ -37,6 +37,20 @@ int row,col;
 
 @implementation TicSlingshotViewController
 
+
+-(BOOL)shouldAutorotate {
+    return true;
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    return UIInterfaceOrientationPortrait;
+}
+
+- (UIInterfaceOrientationMask) supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

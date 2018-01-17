@@ -24,16 +24,30 @@ class EightPuzzleViewController: UIViewController {
     
     let tileColor = UIColor(red: 79/255, green: 173/255, blue: 246/255, alpha: 1.0)
     
+    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+        return  UIInterfaceOrientationMask.portrait
+    }
+    
+    override var shouldAutorotate : Bool {
+        return true
+    }
+    
+    override var preferredInterfaceOrientationForPresentation : UIInterfaceOrientation {
+        return UIInterfaceOrientation.portrait
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "BubblesBackground.png")!)
+        let value = UIInterfaceOrientation.portrait.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
+        
         drawBoard()
     }
     
-    
-    
+
     func drawBoard()
     {
         if let topL = theBoard.board["TopLeft"] {

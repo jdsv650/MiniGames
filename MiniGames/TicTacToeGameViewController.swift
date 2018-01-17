@@ -35,11 +35,25 @@ class TicTacToeGameViewController: UIViewController {
     // set in prepareForSegue
     var isVersusComp : Bool = true
     
+    
+    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+        return  UIInterfaceOrientationMask.portrait
+    }
+    
+    override var shouldAutorotate : Bool {
+        return true
+    }
+    
+    override var preferredInterfaceOrientationForPresentation : UIInterfaceOrientation {
+        return UIInterfaceOrientation.portrait
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        boardView.backgroundColor = UIColor.black //UIColor(patternImage: UIImage(named: "beachsand4.png")!)
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "BubblesBackground.png")!)
+        let value = UIInterfaceOrientation.portrait.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
         
         buttonBackStr = "Bubbles.png"
         buttonXStr = "BubblesX.png"

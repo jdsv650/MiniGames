@@ -66,10 +66,25 @@ class ConnectFourViewController: UIViewController
     @IBOutlet weak var loc5_6: UIButton!
     
     
+    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+        return  UIInterfaceOrientationMask.portrait
+    }
+    
+    override var shouldAutorotate : Bool {
+        return true
+    }
+    
+    override var preferredInterfaceOrientationForPresentation : UIInterfaceOrientation {
+        return UIInterfaceOrientation.portrait
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "BubblesBackground.png")!)
+        
+        let value = UIInterfaceOrientation.portrait.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
     }
     
     override func viewDidAppear(_ animated: Bool) {

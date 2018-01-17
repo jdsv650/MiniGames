@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="Jhp-Hf-904">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="o26-ws-N5C">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -47,7 +47,7 @@
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Mini Games" id="pZd-a4-MZx">
-                        <barButtonItem key="leftBarButtonItem" image="icons8-menu.png" id="VJ1-97-EfB">
+                        <barButtonItem key="leftBarButtonItem" image="list-fat-7.png" id="VJ1-97-EfB">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="SAO-h8-R0h" kind="push" id="zQj-sF-cX8"/>
@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="1041" y="-78"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Main Navigation Controller-->
         <scene sceneID="SYx-WA-nEo">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o26-ws-N5C" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o26-ws-N5C" customClass="MainNavigationController" customModule="MiniGames" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xGw-No-Ezo">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -102,7 +102,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ITA-hw-rqQ">
-                                <rect key="frame" x="28" y="84" width="320" height="328"/>
+                                <rect key="frame" x="27.5" y="84" width="320" height="328"/>
                                 <subviews>
                                     <button opaque="NO" tag="61" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzN-cW-S28">
                                         <rect key="frame" x="10" y="228" width="36" height="36"/>
@@ -1197,11 +1197,11 @@
                         <viewControllerLayoutGuide type="bottom" id="km4-Bh-GBs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cjN-W2-yBs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DsL-bL-kLr">
-                                <rect key="frame" x="0.0" y="64" width="464" height="256"/>
+                                <rect key="frame" x="101" y="59" width="464" height="256"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" tag="40" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ya5-ay-o5y">
@@ -1356,21 +1356,18 @@
                                     </button>
                                 </subviews>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qP5-DS-MI3">
-                                <rect key="frame" x="472" y="109" width="84" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Reset">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="resetPressed:" destination="Jhp-Hf-904" eventType="touchUpInside" id="hhI-Jm-dRd"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="EOT-CG-2Gs"/>
+                    <navigationItem key="navigationItem" id="EOT-CG-2Gs">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="E5T-Ay-tUW">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="resetPegBoardPressed:" destination="Jhp-Hf-904" id="nv0-La-9Vy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <size key="freeformSize" width="667" height="375"/>
                     <connections>
                         <outletCollection property="Holes" destination="ya5-ay-o5y" collectionClass="NSMutableArray" id="sfa-Tz-kNJ"/>
                         <outletCollection property="Holes" destination="DAh-xd-mrZ" collectionClass="NSMutableArray" id="N3f-wG-mIj"/>
@@ -1391,7 +1388,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cuY-xB-6yZ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1244" y="772"/>
+            <point key="canvasLocation" x="1498" y="765"/>
         </scene>
         <!--Share-->
         <scene sceneID="Yrr-SU-XZR">
@@ -1482,7 +1479,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jaf-Mu-bIi">
-                                <rect key="frame" x="32" y="84" width="312" height="360"/>
+                                <rect key="frame" x="31.5" y="84" width="312" height="360"/>
                                 <subviews>
                                     <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ova-Yj-sCI">
                                         <rect key="frame" x="20" y="20" width="85" height="85"/>
@@ -1801,7 +1798,7 @@
         <image name="beanbag.png" width="45" height="44"/>
         <image name="blackCircle.png" width="200" height="201"/>
         <image name="bubble.png" width="425" height="425"/>
-        <image name="icons8-menu.png" width="32" height="32"/>
+        <image name="list-fat-7.png" width="30" height="30"/>
         <image name="red.png" width="40" height="40"/>
         <image name="slingshot1.png" width="54" height="80"/>
         <image name="tee.png" width="50" height="50"/>

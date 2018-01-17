@@ -26,6 +26,7 @@ class InfoViewController: UIViewController, SKStoreProductViewControllerDelegate
     var origShareWidth: CGFloat!
     var origShareHeight: CGFloat!
     
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         print("TouchesBegan")
         
