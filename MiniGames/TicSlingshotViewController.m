@@ -56,6 +56,9 @@ int row,col;
     [super viewDidLoad];
     boardView.backgroundColor = [UIColor blackColor];
     self.view.backgroundColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"BubblesBackground.png"]];
+  
+    NSNumber *orientation =[NSNumber numberWithInt: UIDeviceOrientationPortrait];
+    [UIDevice.currentDevice setValue:orientation forKey:@"orientation"];
     
     buttonBackStr = @"BubblesXO.png";
     buttonXStr = @"BubblesX.png";
