@@ -114,8 +114,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor(patternImage: (UIImage (named: "BubblesBackground.png"))!)
-
         origTicTacToeWidth = self.TicTacToe.frame.size.width
         origTicTacToeHeight = self.TicTacToe.frame.size.height
         
@@ -134,29 +132,31 @@ class HomeViewController: UIViewController {
         let TicTacLabel = UILabel(frame: CGRect(x: 30, y: 25, width: 95, height: 40))
         TicTacLabel.text = "Tic Tac Toe"
         TicTacLabel.textAlignment = NSTextAlignment.center
+        TicTacLabel.textColor = .black
         TicTacToe.layer.zPosition = 1
         TicTacToe.addSubview(TicTacLabel)
         
         let EightLabel = UILabel(frame: CGRect(x: 25, y: 35, width: 95, height: 40))
         EightLabel.text = "8 Puzzle"
         EightLabel.textAlignment = NSTextAlignment.center
+        EightLabel.textColor = .black
         EightPuzzle.layer.zPosition = 1
         EightPuzzle.addSubview(EightLabel)
         
         let Connect4Label = UILabel(frame: CGRect(x: 40, y: 30, width: 95, height: 40))
         Connect4Label.text = "Connect 4"
         Connect4Label.textAlignment = NSTextAlignment.center
+        Connect4Label.textColor = .black
         ConnectFour.layer.zPosition = 1
         ConnectFour.addSubview(Connect4Label)
         
         let PegLabel = UILabel(frame: CGRect(x: 25, y: 40, width: 95, height: 40))
         PegLabel.text = "Peg Board"
         PegLabel.textAlignment = NSTextAlignment.center
+        PegLabel.textColor = .black
         PegBoard.layer.zPosition = 1
         PegBoard.addSubview(PegLabel)
         
-        //PegBoard.isHidden = true
-        //PegLabel.isHidden = true
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -19,6 +19,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BubblesBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="ait-YN-YZd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <imageView tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="W9e-r0-hsE">
                                 <rect key="frame" x="6" y="76" width="160" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -41,6 +44,12 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ait-YN-YZd" secondAttribute="bottom" id="9Zx-qz-JYC"/>
+                            <constraint firstItem="ait-YN-YZd" firstAttribute="top" secondItem="e9U-DY-2G6" secondAttribute="top" id="IPB-7o-Wht"/>
+                            <constraint firstAttribute="trailing" secondItem="ait-YN-YZd" secondAttribute="trailing" id="Irj-gW-hGD"/>
+                            <constraint firstItem="ait-YN-YZd" firstAttribute="leading" secondItem="e9U-DY-2G6" secondAttribute="leading" id="MS2-Ra-vdv"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Mini Games" id="pZd-a4-MZx"/>
                     <connections>
@@ -57,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R2i-nm-9K4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1508.6956521739132" y="-52.232142857142854"/>
+            <point key="canvasLocation" x="1508" y="-52.623688155922046"/>
         </scene>
         <!--Main Navigation Controller-->
         <scene sceneID="SYx-WA-nEo">
@@ -67,7 +76,14 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xGw-No-Ezo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.30876920869275998" green="0.67916624064833553" blue="0.96283227205276489" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1175,7 +1191,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lBy-2k-jWK" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="869.56521739130437" y="355.58035714285711"/>
+            <point key="canvasLocation" x="762" y="521"/>
         </scene>
         <!--Peg Board View Controller-->
         <scene sceneID="wjX-9D-BMe">
@@ -1901,6 +1917,7 @@
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
         <image name="Bubbles.png" width="200" height="200"/>
+        <image name="BubblesBackground.png" width="1600" height="1200"/>
         <image name="beanbag.png" width="45" height="44"/>
         <image name="blackCircle.png" width="200" height="201"/>
         <image name="bubble.png" width="425" height="425"/>
