@@ -105,7 +105,7 @@ class ConnectFourViewController: UIViewController
         {
             if theBoard.dropTokenAtSlotWithTagNumber(number: sender.tag, withSlotType: Board.Slot.red)
             {
-                sender.setBackgroundImage(UIImage(named: "red.png"), for: UIControlState())
+                sender.setBackgroundImage(UIImage(named: "red.png"), for: UIControl.State())
                 
                 if theBoard.isFull()
                 {
@@ -128,7 +128,7 @@ class ConnectFourViewController: UIViewController
         {
             if theBoard.dropTokenAtSlotWithTagNumber(number: sender.tag, withSlotType: Board.Slot.black)
             {
-                sender.setBackgroundImage(UIImage(named: "black.png"), for: UIControlState())
+                sender.setBackgroundImage(UIImage(named: "black.png"), for: UIControl.State())
                 
                 if theBoard.isFull()
                 {
@@ -186,9 +186,9 @@ class ConnectFourViewController: UIViewController
             player = "Player 1"
         }
         
-        let alertVC = UIAlertController(title: "Winner", message: "\(player) wins!", preferredStyle: UIAlertControllerStyle.actionSheet)
+        let alertVC = UIAlertController(title: "Winner", message: "\(player) wins!", preferredStyle: UIAlertController.Style.actionSheet)
         
-        let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (action) -> Void in
+        let action = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) { (action) -> Void in
             self.resetGame()
         }
         
@@ -209,48 +209,48 @@ class ConnectFourViewController: UIViewController
         // 51,52,53,54,55,56,57
         // 61,62,63,64,65,66,67
         
-        loc0_0.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc0_1.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc0_2.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc0_3.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc0_4.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc0_5.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc0_6.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc1_0.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc1_1.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc1_2.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc1_3.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc1_4.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc1_5.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc1_6.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc2_0.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc2_1.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc2_2.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc2_3.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc2_4.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc2_5.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc2_6.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc3_0.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc3_1.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc3_2.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc3_3.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc3_4.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc3_5.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc3_6.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc4_0.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc4_1.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc4_2.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc4_3.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc4_4.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc4_5.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc4_6.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc5_0.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc5_1.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc5_2.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc5_3.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc5_4.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc5_5.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
-        loc5_6.setBackgroundImage(UIImage(named: "white.png"), for: UIControlState())
+        loc0_0.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc0_1.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc0_2.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc0_3.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc0_4.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc0_5.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc0_6.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc1_0.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc1_1.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc1_2.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc1_3.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc1_4.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc1_5.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc1_6.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc2_0.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc2_1.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc2_2.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc2_3.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc2_4.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc2_5.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc2_6.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc3_0.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc3_1.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc3_2.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc3_3.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc3_4.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc3_5.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc3_6.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc4_0.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc4_1.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc4_2.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc4_3.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc4_4.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc4_5.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc4_6.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc5_0.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc5_1.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc5_2.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc5_3.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc5_4.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc5_5.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
+        loc5_6.setBackgroundImage(UIImage(named: "white.png"), for: UIControl.State())
     }
     
 }

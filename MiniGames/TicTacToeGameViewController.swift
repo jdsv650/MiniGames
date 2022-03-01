@@ -86,15 +86,15 @@ class TicTacToeGameViewController: UIViewController {
         }
 
         
-        button1_1_Outlet.setBackgroundImage(UIImage(named: buttonBackStr!), for: UIControlState())
-        button1_2_Outlet.setBackgroundImage(UIImage(named: buttonBackStr!), for: UIControlState())
-        button1_3_Outlet.setBackgroundImage(UIImage(named: buttonBackStr!), for: UIControlState())
-        button2_1_Outlet.setBackgroundImage(UIImage(named: buttonBackStr!), for: UIControlState())
-        button2_2_Outlet.setBackgroundImage(UIImage(named: buttonBackStr!), for: UIControlState())
-        button2_3_Outlet.setBackgroundImage(UIImage(named: buttonBackStr!), for: UIControlState())
-        button3_1_Outlet.setBackgroundImage(UIImage(named: buttonBackStr!), for: UIControlState())
-        button3_2_Outlet.setBackgroundImage(UIImage(named: buttonBackStr!), for: UIControlState())
-        button3_3_Outlet.setBackgroundImage(UIImage(named: buttonBackStr!), for: UIControlState())
+        button1_1_Outlet.setBackgroundImage(UIImage(named: buttonBackStr!), for: UIControl.State())
+        button1_2_Outlet.setBackgroundImage(UIImage(named: buttonBackStr!), for: UIControl.State())
+        button1_3_Outlet.setBackgroundImage(UIImage(named: buttonBackStr!), for: UIControl.State())
+        button2_1_Outlet.setBackgroundImage(UIImage(named: buttonBackStr!), for: UIControl.State())
+        button2_2_Outlet.setBackgroundImage(UIImage(named: buttonBackStr!), for: UIControl.State())
+        button2_3_Outlet.setBackgroundImage(UIImage(named: buttonBackStr!), for: UIControl.State())
+        button3_1_Outlet.setBackgroundImage(UIImage(named: buttonBackStr!), for: UIControl.State())
+        button3_2_Outlet.setBackgroundImage(UIImage(named: buttonBackStr!), for: UIControl.State())
+        button3_3_Outlet.setBackgroundImage(UIImage(named: buttonBackStr!), for: UIControl.State())
         
     }
     
@@ -108,60 +108,60 @@ class TicTacToeGameViewController: UIViewController {
             if tictac[2][1] == "X" && tictac [1][2] == "X" && tictac[2][2] == "-" {
                 tictac[2][2] = "O"
                 // drawO(2,2,2);
-                button3_3_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for: UIControlState())
+                button3_3_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for: UIControl.State())
             }
             else if(tictac[1][1] == "-")  {
                 tictac[1][1] = "O"
                 // drawO(1,1,2);
-                button2_2_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                button2_2_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                 
             }
             else if(tictac[0][0] == "-" && (tictac[0][2] != "X" || tictac[2][0] != "X"))  {
                 tictac[0][0] = "O"
                 // drawO(0,0,2);
-                button1_1_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                button1_1_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                 
             }
             else if (tictac[2][2] == "-" && (tictac[0][2] != "X" || tictac[2][0] != "X"))   {
                 tictac[2][2] = "O"
                 //drawO(2,2,2);
-                button3_3_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                button3_3_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                 
             }
             else if (tictac[2][0] == "-" && (tictac[0][0] != "X" || tictac[2][2] != "X")) {
                 tictac[2][0] = "O"
                 //drawO(2,0,2);
-                button3_1_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                button3_1_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                 
             }
             else if (tictac[0][2] == "-" && (tictac[0][0] != "X" || tictac[2][2] != "X")) {
                 tictac[0][2] = "O"
                 // drawO(0,2,2);
-                button1_3_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                button1_3_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                 
             }
             else if (tictac[1][0] == "-") {
                 tictac[1][0] = "O"
                 // drawO(1,0,2);
-                button2_1_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                button2_1_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                 
             }
             else if (tictac[2][1] == "-") {
                 tictac[2][1] = "O"
                 // drawO(2,1,2);
-                button3_2_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                button3_2_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                 
             }
             else if (tictac[1][2] == "-") {
                 tictac[1][2] = "O"
                 // drawO(1,2,2);
-                button2_3_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                button2_3_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                 
             }
             else if (tictac[0][1] == "-")  {
                 tictac[0][1] = "O"
                 // drawO(0,1,2);
-                button1_2_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                button1_2_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                 
             }
             else
@@ -239,48 +239,48 @@ class TicTacToeGameViewController: UIViewController {
         case 0:
             if(col == 0)
             {
-                button1_1_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                button1_1_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
             }
             else if(col == 1)
             {
-                button1_2_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                button1_2_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                 
             }
             else if(col == 2)
             {
-                button1_3_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                button1_3_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                 
             }
             break
         case 1:
             if(col == 0)
             {
-                button2_1_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                button2_1_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
             }
             else if(col == 1)
             {
-                button2_2_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                button2_2_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                 
             }
             else if(col == 2)
             {
-                button2_3_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                button2_3_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                 
             }
             break
         case 2:
             if(col == 0)
             {
-                button3_1_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                button3_1_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
             }
             else if(col == 1)
             {
-                button3_2_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                button3_2_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                 
             }
             else if(col == 2)
             {
-                button3_3_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                button3_3_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                 
             }
             break
@@ -329,39 +329,39 @@ class TicTacToeGameViewController: UIViewController {
                         // drawO(row,col,2);
                         //block
                         if(row == 0 && col == 0) {
-                            button1_1_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                            button1_1_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                         }
                         if(row == 0 && col == 1)
                         {
-                            button1_2_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                            button1_2_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                         }
                         if(row == 0 && col == 2)
                         {
-                            button1_3_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                            button1_3_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                         }
                         if(row == 1 && col == 0)
                         {
-                            button2_1_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                            button2_1_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                         }
                         if(row == 1 && col == 1)
                         {
-                            button2_2_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                            button2_2_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                         }
                         if(row == 1 && col == 2)
                         {
-                            button2_3_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                            button2_3_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                         }
                         if(row == 2 && col == 0)
                         {
-                            button3_1_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                            button3_1_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                         }
                         if(row == 2 && col == 1)
                         {
-                            button3_2_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                            button3_2_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                         }
                         if(row == 2 && col == 2)
                         {
-                            button3_3_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                            button3_3_Outlet.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                         }
                         return 1
                     }
@@ -423,7 +423,7 @@ class TicTacToeGameViewController: UIViewController {
         }
         
         if isPlayerX && !isVersusComp {
-            sender.setBackgroundImage(UIImage(named: buttonXStr!), for:UIControlState())
+            sender.setBackgroundImage(UIImage(named: buttonXStr!), for:UIControl.State())
             tictac[row!][col!] = "X"  /* make move for 'X' */
             if self.checkIfWon("X") == 1  {
                 print("X wins\n")
@@ -439,7 +439,7 @@ class TicTacToeGameViewController: UIViewController {
         else
             if !isPlayerX && !isVersusComp
             {
-                sender.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControlState())
+                sender.setBackgroundImage(UIImage(named: buttonOStr!), for:UIControl.State())
                 tictac[row!][col!] = "O"  /* make move for 'O' */
                 if self.checkIfWon("O") == 1 {
                     print("O wins\n")
@@ -454,7 +454,7 @@ class TicTacToeGameViewController: UIViewController {
             }
             else  // versus computer
             {
-                sender.setBackgroundImage(UIImage(named: buttonXStr!),for:UIControlState())
+                sender.setBackgroundImage(UIImage(named: buttonXStr!),for:UIControl.State())
                 tictac[row!][col!] = "X"  /* make move for 'X' */
         }
         
@@ -574,8 +574,8 @@ class TicTacToeGameViewController: UIViewController {
     
     func showUserMessage(_ title: String, theMessage: String)
     {
-        let alert = UIAlertController(title: title, message: theMessage, preferredStyle: UIAlertControllerStyle.actionSheet)
-        let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {  (action) in self.initialize() })
+        let alert = UIAlertController(title: title, message: theMessage, preferredStyle: UIAlertController.Style.actionSheet)
+        let action = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {  (action) in self.initialize() })
         
         alert.view.tintColor = #colorLiteral(red: 0.01086394209, green: 0.6895962358, blue: 0.9880219102, alpha: 1)
         alert.addAction(action)

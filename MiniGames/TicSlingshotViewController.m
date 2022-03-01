@@ -136,11 +136,12 @@ int row,col;
     [self presentViewController:alert animated:YES completion:nil];
 }
 
-
+/*
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     [self initialize];
 }
+*/
 
 
 // Handles the start of a touch
@@ -232,21 +233,21 @@ int row,col;
                         options:UIViewAnimationOptionTransitionFlipFromBottom
                      animations:^ void (void)
      {
-         int dist = (beginY - endY);
-         [beanBagOutlet setFrame:CGRectMake(endX, 400 +(dist*3.5), 45, 45)];
-         [beanBagOutlet setTransform:CGAffineTransformMakeRotation(720)];
+        int dist = (self->beginY - self->endY);
+        [self->beanBagOutlet setFrame:CGRectMake(self->endX, 400 +(dist*3.5), 45, 45)];
+        [self->beanBagOutlet setTransform:CGAffineTransformMakeRotation(720)];
          
      } completion:^ void (BOOL isFinished) {
      
          if(isFinished)
          {
              [self updateButton];
-             [beanBagOutlet setTransform:CGAffineTransformIdentity];
-             [beanBagOutlet setHidden:YES];
+             [self->beanBagOutlet setTransform:CGAffineTransformIdentity];
+             [self->beanBagOutlet setHidden:YES];
              
              //reset slingshot to center
-             [slingshotOutlet setImage:[UIImage imageNamed:@"slingshot1"]];
-             [slingshotOutlet setCenter:CGPointMake(184, 370)];
+             [self->slingshotOutlet setImage:[UIImage imageNamed:@"slingshot1"]];
+             [self->slingshotOutlet setCenter:CGPointMake(184, 370)];
              [self.view setUserInteractionEnabled:YES];
          }
      }];

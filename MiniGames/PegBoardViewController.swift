@@ -11,6 +11,8 @@ import UIKit
 class PegBoardViewController: UIViewController {
 
     @IBOutlet var Holes: [UIButton]!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     
     var pegBoard = PegBoard()
     var selectedPegTag:Int? = nil
@@ -33,6 +35,13 @@ class PegBoardViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "BubblesBackground.png")!)
         
+        // pushing down on load
+        if #available(iOS 11.0, *) {
+            scrollView.contentInsetAdjustmentBehavior = .never
+        } else {
+            self.automaticallyAdjustsScrollViewInsets = false
+        }
+        
         let value = UIInterfaceOrientation.landscapeLeft.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
         
@@ -46,16 +55,16 @@ class PegBoardViewController: UIViewController {
         
         for i in 0 ..< Holes.count
         {
-            Holes[i].setTitleColor(UIColor.black, for: UIControlState.normal)
-            Holes[i].setTitle("", for: UIControlState.normal)
+            Holes[i].setTitleColor(UIColor.black, for: UIControl.State.normal)
+            Holes[i].setTitle("", for: UIControl.State.normal)
             
             let currentHoleStatus = pegBoard.getHoleStatus(Holes[i].tag)
             if currentHoleStatus == PegBoard.Hole.open
             {
-                Holes[i].setBackgroundImage(UIImage(named: "blackCircle.png"), for: UIControlState.normal)
+                Holes[i].setBackgroundImage(UIImage(named: "blackCircle.png"), for: UIControl.State.normal)
             } else if currentHoleStatus == PegBoard.Hole.filled
             {
-                Holes[i].setBackgroundImage(UIImage(named: "pin2.png"), for: UIControlState.normal)
+                Holes[i].setBackgroundImage(UIImage(named: "pin2.png"), for: UIControl.State.normal)
             }
         }
     }

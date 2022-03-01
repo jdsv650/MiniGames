@@ -197,7 +197,7 @@ class HomeViewController: UIViewController {
         let randY = CGFloat(Int(arc4random_uniform(UInt32(height))))
         let randTime = Double((Int(arc4random_uniform(20))) + 2)
         
-        UIView.animate(withDuration: randTime, delay: 0, options: [UIViewAnimationOptions.allowUserInteraction, UIViewAnimationOptions.beginFromCurrentState ], animations: {
+        UIView.animate(withDuration: randTime, delay: 0, options: [UIView.AnimationOptions.allowUserInteraction, UIView.AnimationOptions.beginFromCurrentState ], animations: {
             self.TicTacToe.frame = CGRect(x: randX, y: randY, width: self.TicTacToe.frame.size.width, height: self.TicTacToe.frame.size.height)
             }, completion: { (Bool) in self.animateTicTacToe(randX, newOriginY: randY)
         })
@@ -238,7 +238,7 @@ class HomeViewController: UIViewController {
         //  self.PegBoard.transform = CGAffineTransformMakeScale(self.randomBetween(1.0, secondNum: 2.0), self.randomBetween(1.0, secondNum: 2.0))
 
         
-        UIView.animate(withDuration: randTime, delay: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: {
+        UIView.animate(withDuration: randTime, delay: 0, options: UIView.AnimationOptions.allowUserInteraction, animations: {
             self.PegBoard.frame = CGRect(x: randX, y: randY, width: self.PegBoard.frame.size.width, height: self.PegBoard.frame.size.height)
          //  self.PegBoard.transform = CGAffineTransformMakeTranslation(randX, randY)
             //self.PegBoard.transform = CGAffineTransformIdentity
@@ -264,7 +264,7 @@ class HomeViewController: UIViewController {
         let randY = CGFloat(Int(arc4random_uniform(UInt32(height))))
         let randTime = Double((Int(arc4random_uniform(5))) + 10)
         
-        UIView.animate(withDuration: randTime, delay: 0, options:  [UIViewAnimationOptions.allowUserInteraction, UIViewAnimationOptions.beginFromCurrentState], animations: {
+        UIView.animate(withDuration: randTime, delay: 0, options:  [UIView.AnimationOptions.allowUserInteraction, UIView.AnimationOptions.beginFromCurrentState], animations: {
             self.EightPuzzle.frame = CGRect(x: randX, y: randY, width: self.EightPuzzle.frame.size.width, height: self.EightPuzzle.frame.size.height)
             }, completion: { (Bool) in self.animateEightPuzzle(randX, newOriginY: randY)
         })
@@ -277,7 +277,7 @@ class HomeViewController: UIViewController {
         let randY = CGFloat(Int(arc4random_uniform(UInt32(height))))
         let randTime = Double((Int(arc4random_uniform(5))) + 6)
         
-        UIView.animate(withDuration: randTime, delay: 0, options:  [UIViewAnimationOptions.allowUserInteraction, UIViewAnimationOptions.beginFromCurrentState], animations: {
+        UIView.animate(withDuration: randTime, delay: 0, options:  [UIView.AnimationOptions.allowUserInteraction, UIView.AnimationOptions.beginFromCurrentState], animations: {
             self.ConnectFour.frame = CGRect(x: randX, y: randY, width: self.ConnectFour.frame.size.width, height: self.ConnectFour.frame.size.height)
             }, completion: { (Bool) in self.animateConnectFour(randX, newOriginY: randY)
         })

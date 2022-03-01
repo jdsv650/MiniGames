@@ -51,47 +51,47 @@ class EightPuzzleViewController: UIViewController {
     func drawBoard()
     {
         if let topL = theBoard.board["TopLeft"] {
-            topLeft.setTitle("\(topL)", for: UIControlState())
+            topLeft.setTitle("\(topL)", for: UIControl.State())
             colorTile(topLeft)
         }
         
         if let topM = theBoard.board["TopMiddle"] {
-            topMiddle.setTitle("\(topM)", for: UIControlState())
+            topMiddle.setTitle("\(topM)", for: UIControl.State())
             colorTile(topMiddle)
         }
         
         if let topR = theBoard.board["TopRight"] {
-            topRight.setTitle("\(topR)", for: UIControlState())
+            topRight.setTitle("\(topR)", for: UIControl.State())
             colorTile(topRight)
         }
         
         if let centerL = theBoard.board["CenterLeft"] {
-            centerLeft.setTitle("\(centerL)", for: UIControlState())
+            centerLeft.setTitle("\(centerL)", for: UIControl.State())
             colorTile(centerLeft)
         }
         
         if let centerM = theBoard.board["CenterMiddle"] {
-            centerMiddle.setTitle("\(centerM)", for: UIControlState())
+            centerMiddle.setTitle("\(centerM)", for: UIControl.State())
             colorTile(centerMiddle)
         }
         
         if let centerR = theBoard.board["CenterRight"] {
-            centerRight.setTitle("\(centerR)", for: UIControlState())
+            centerRight.setTitle("\(centerR)", for: UIControl.State())
             colorTile(centerRight)
         }
         
         if let bottomL = theBoard.board["BottomLeft"] {
-            bottomLeft.setTitle("\(bottomL)", for: UIControlState())
+            bottomLeft.setTitle("\(bottomL)", for: UIControl.State())
             colorTile(bottomLeft)
         }
         
         if let bottomM = theBoard.board["BottomMiddle"] {
-            bottomMiddle.setTitle("\(bottomM)", for: UIControlState())
+            bottomMiddle.setTitle("\(bottomM)", for: UIControl.State())
             colorTile(bottomMiddle)
         }
         
         if let bottomR = theBoard.board["BottomRight"] {
-            bottomRight.setTitle("\(bottomR)", for: UIControlState())
+            bottomRight.setTitle("\(bottomR)", for: UIControl.State())
             colorTile(bottomRight)
         }
     }
@@ -99,7 +99,7 @@ class EightPuzzleViewController: UIViewController {
     
     func colorTile(_ theButton: UIButton!)
     {
-        if theButton.title(for: UIControlState()) == ""
+        if theButton.title(for: UIControl.State()) == ""
         {
             theButton.backgroundColor = UIColor.black
         }

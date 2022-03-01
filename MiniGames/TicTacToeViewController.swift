@@ -135,7 +135,7 @@ class TicTacToeViewController: UIViewController {
         let randY = CGFloat(Int(arc4random_uniform(UInt32(height))))
         let randTime = Double((Int(arc4random_uniform(20))) + 2)
         
-        UIView.animate(withDuration: randTime, delay: 0, options: [UIViewAnimationOptions.allowUserInteraction, UIViewAnimationOptions.beginFromCurrentState ], animations: {
+        UIView.animate(withDuration: randTime, delay: 0, options: [UIView.AnimationOptions.allowUserInteraction, UIView.AnimationOptions.beginFromCurrentState ], animations: {
             self.TicTacToeSingle.frame = CGRect(x: randX, y: randY, width: self.TicTacToeSingle.frame.size.width, height: self.TicTacToeSingle.frame.size.height)
         }, completion: { (Bool) in self.animateTicTacToeSingle(randX, newOriginY: randY)
         })
@@ -176,7 +176,7 @@ class TicTacToeViewController: UIViewController {
         //  self.PegBoard.transform = CGAffineTransformMakeScale(self.randomBetween(1.0, secondNum: 2.0), self.randomBetween(1.0, secondNum: 2.0))
         
         
-        UIView.animate(withDuration: randTime, delay: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: {
+        UIView.animate(withDuration: randTime, delay: 0, options: UIView.AnimationOptions.allowUserInteraction, animations: {
             self.TicTacToeTwo.frame = CGRect(x: randX, y: randY, width: self.TicTacToeTwo.frame.size.width, height: self.TicTacToeTwo.frame.size.height)
             //  self.PegBoard.transform = CGAffineTransformMakeTranslation(randX, randY)
             //self.PegBoard.transform = CGAffineTransformIdentity
@@ -202,7 +202,7 @@ class TicTacToeViewController: UIViewController {
         let randY = CGFloat(Int(arc4random_uniform(UInt32(height))))
         let randTime = Double((Int(arc4random_uniform(5))) + 10)
         
-        UIView.animate(withDuration: randTime, delay: 0, options:  [UIViewAnimationOptions.allowUserInteraction, UIViewAnimationOptions.beginFromCurrentState], animations: {
+        UIView.animate(withDuration: randTime, delay: 0, options:  [UIView.AnimationOptions.allowUserInteraction, UIView.AnimationOptions.beginFromCurrentState], animations: {
             self.TicTacToeTwoSlingshot.frame = CGRect(x: randX, y: randY, width: self.TicTacToeTwoSlingshot.frame.size.width, height: self.TicTacToeTwoSlingshot.frame.size.height)
         }, completion: { (Bool) in self.animateTicTacToeTwoSlingshot(randX, newOriginY: randY)
         })

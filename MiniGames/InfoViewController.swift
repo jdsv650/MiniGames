@@ -119,7 +119,7 @@ class InfoViewController: UIViewController, SKStoreProductViewControllerDelegate
         let randY = CGFloat(Int(arc4random_uniform(UInt32(height))))
         let randTime = Double((Int(arc4random_uniform(20))) + 2)
         
-        UIView.animate(withDuration: randTime, delay: 0, options: [UIViewAnimationOptions.allowUserInteraction, UIViewAnimationOptions.beginFromCurrentState ], animations: {
+        UIView.animate(withDuration: randTime, delay: 0, options: [UIView.AnimationOptions.allowUserInteraction, UIView.AnimationOptions.beginFromCurrentState ], animations: {
             self.RateIV.frame = CGRect(x: randX, y: randY, width: self.RateIV.frame.size.width, height: self.RateIV.frame.size.height)
         }, completion: { (Bool) in self.animateRate(randX, newOriginY: randY)
         })
@@ -160,7 +160,7 @@ class InfoViewController: UIViewController, SKStoreProductViewControllerDelegate
         //  self.PegBoard.transform = CGAffineTransformMakeScale(self.randomBetween(1.0, secondNum: 2.0), self.randomBetween(1.0, secondNum: 2.0))
         
         
-        UIView.animate(withDuration: randTime, delay: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: {
+        UIView.animate(withDuration: randTime, delay: 0, options: UIView.AnimationOptions.allowUserInteraction, animations: {
             self.ShareIV.frame = CGRect(x: randX, y: randY, width: self.ShareIV.frame.size.width, height: self.ShareIV.frame.size.height)
             //  self.PegBoard.transform = CGAffineTransformMakeTranslation(randX, randY)
             //self.PegBoard.transform = CGAffineTransformIdentity
@@ -190,7 +190,7 @@ class InfoViewController: UIViewController, SKStoreProductViewControllerDelegate
         
         let activityVC = UIActivityViewController(activityItems: itemsToShare, applicationActivities: nil)
         
-        activityVC.excludedActivityTypes = [UIActivityType.addToReadingList, UIActivityType.assignToContact, UIActivityType.print]
+        activityVC.excludedActivityTypes = [UIActivity.ActivityType.addToReadingList, UIActivity.ActivityType.assignToContact, UIActivity.ActivityType.print]
         
         self.present(activityVC, animated: true, completion: nil)
 
