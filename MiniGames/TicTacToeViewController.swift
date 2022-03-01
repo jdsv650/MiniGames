@@ -82,18 +82,21 @@ class TicTacToeViewController: UIViewController {
         let TicTacLabel = UILabel(frame: CGRect(x: 30, y: 25, width: 95, height: 40))
         TicTacLabel.text = "1 Player"
         TicTacLabel.textAlignment = NSTextAlignment.center
+        TicTacLabel.textColor = .black
         TicTacToeSingle.layer.zPosition = 1
         TicTacToeSingle.addSubview(TicTacLabel)
         
         let TicTacTwo = UILabel(frame: CGRect(x: 25, y: 35, width: 95, height: 40))
         TicTacTwo.text = "2 Player"
         TicTacTwo.textAlignment = NSTextAlignment.center
+        TicTacTwo.textColor = .black
         TicTacTwo.layer.zPosition = 1
         TicTacToeTwo.addSubview(TicTacTwo)
         
         let Slingshot2Label = UILabel(frame: CGRect(x: 40, y: 30, width: 120, height: 40))
         Slingshot2Label.text = "2P Slingshot"
         Slingshot2Label.textAlignment = NSTextAlignment.center
+        Slingshot2Label.textColor = .black
         Slingshot2Label.layer.zPosition = 1
         TicTacToeTwoSlingshot.addSubview(Slingshot2Label)
     

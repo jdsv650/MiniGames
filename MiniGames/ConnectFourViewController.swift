@@ -188,6 +188,8 @@ class ConnectFourViewController: UIViewController
         
         let alertVC = UIAlertController(title: "Winner", message: "\(player) wins!", preferredStyle: UIAlertController.Style.actionSheet)
         
+        alertVC.view.tintColor = UIColor(red: 1.00, green: 0.99, blue: 0.33, alpha: 1.00)
+        
         let action = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) { (action) -> Void in
             self.resetGame()
         }
@@ -196,6 +198,7 @@ class ConnectFourViewController: UIViewController
         self.present(alertVC, animated: true) { () -> Void in
             
         }
+        
     }
     
     
